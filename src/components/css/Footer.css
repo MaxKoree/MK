@@ -1,0 +1,20 @@
+.footerClass {
+	background: linear-gradient(to top, rgb(112, 218, 68) ,  rgb(88, 88, 88));
+	border-top: double 10px green;
+	height: 300px;
+    width: 100%;
+    text-align: center;
+    float: left;
+    z-index: -2;
+}
+
+#footerHeader {
+	float: right;
+	color: black;
+	font-size: 30px;
+	font-family: 'Bungee Outline', monospace;
+	margin: 90px 10px 0px 0px;
+}
+
+
+

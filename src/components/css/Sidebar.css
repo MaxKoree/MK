@@ -1,0 +1,89 @@
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+.sideBarClass {
+	height: 60px;
+}
+
+#linkList {
+	display: inline-grid;
+	position: fixed;
+	background: linear-gradient(to right, #213897 1%,#2989d8 50%, white 100%);
+	border-right: double 10px black;
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	text-align: center;
+	width: 22rem;
+	padding-top: 2rem;
+}
+
+#upworkIMG, #linkedinIMG {
+	width: 200px;
+	height: 50px;
+	border: solid 2px black;
+	padding: 1rem;
+	border-radius: 6px;
+}
+
+#githubIMG {
+	width: 200px;
+	height: 70px;
+	border: solid 2px black;
+	padding: 1rem;
+	border-radius: 6px;
+}
+
+#linkedinIMG:hover, #upworkIMG:hover, #githubIMG:hover, #arrowButton:hover {
+	border: solid 2px black;
+    transition: 0.4s;
+    border-radius: 6px;
+    box-shadow: 4px 6px black;
+}
+
+#arrowButton {
+	cursor: pointer;
+	background: none;
+	font-size: 35px;
+	color: rgb(53, 53, 53);
+	font-family: 'JetBrains Mono', monospace;
+	border: solid 2px black;
+	padding: 1rem;
+	border-radius: 6px;
+	width: 200px;
+}
+
+#aboutmeButton, #contactButton {
+	width: 200px;
+   padding: 1rem;
+   font-size: 35px;
+   font-family: 'JetBrains Mono', monospace;
+   width: 200px;
+   color: rgb(53, 53, 53);
+   background: none;
+   cursor: pointer;
+   text-align: center;
+   border: solid 2px black;
+   padding: 1rem;
+   border-radius: 6px;
+}
+
+
+#aboutmeButton:hover, #contactButton:hover{
+    border: solid 2px black;
+    transition: 0.4s;
+    border-radius: 6px;
+    box-shadow: 3px 5px black;
+}
+
+button:focus {
+    outline-style : none;
+}
+
+
+
+
+
+
