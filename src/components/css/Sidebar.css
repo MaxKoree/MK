@@ -36,11 +36,12 @@ ul {
 	border-radius: 6px;
 }
 
-#linkedinIMG:hover, #upworkIMG:hover, #githubIMG:hover, #arrowButton:hover {
+#linkedinIMG:hover, #upworkIMG:hover, #githubIMG:hover, #arrowButton:hover, #aboutmeButton:hover, #contactButton:hover {
 	border: solid 2px black;
-    transition: 0.4s;
+    transition: 0.9s;
     border-radius: 6px;
     box-shadow: 4px 6px black;
+    color: black;
 }
 
 #arrowButton {
@@ -56,7 +57,7 @@ ul {
 }
 
 #aboutmeButton, #contactButton {
-	width: 200px;
+width: 200px;
    padding: 1rem;
    font-size: 35px;
    font-family: 'JetBrains Mono', monospace;
@@ -70,13 +71,6 @@ ul {
    border-radius: 6px;
 }
 
-
-#aboutmeButton:hover, #contactButton:hover{
-    border: solid 2px black;
-    transition: 0.4s;
-    border-radius: 6px;
-    box-shadow: 3px 5px black;
-}
 
 button:focus {
     outline-style : none;

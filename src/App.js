@@ -69,20 +69,20 @@ class App extends Component {
                 />
 				{(() => {
 				if(this.state.theposition > 0 && this.state.theposition < 35) {
-					document.getElementById("arrowButton").style.transition = "all 1s";
+					document.getElementById("arrowButton").style.transition = "all 0.9s";
 					document.getElementById("arrowButton").style.boxShadow = "4px 6px black";
 					document.getElementById("aboutmeButton").style.boxShadow = "";
 					document.getElementById("contactButton").style.boxShadow = "";
 				}
 				if(this.state.theposition > 21 && this.state.theposition < 64) {
-					document.getElementById("aboutmeButton").style.transition = "all 1s";
+					document.getElementById("aboutmeButton").style.transition = "all 0.9s";
 					document.getElementById("aboutmeButton").style.boxShadow = "4px 6px black";
 					document.getElementById("contactButton").style.boxShadow = "";
 					document.getElementById("arrowButton").style.boxShadow = "";
 				}
 				if(this.state.theposition > 64) {
 					console.log(this.state.theposition)
-					document.getElementById("contactButton").style.transition = "all 1s";
+					document.getElementById("contactButton").style.transition = "all 0.9s";
 					document.getElementById("contactButton").style.boxShadow = "4px 6px black";
 					document.getElementById("aboutmeButton").style.boxShadow = "";
 					document.getElementById("arrowButton").style.boxShadow = "";
@@ -103,10 +103,10 @@ export default App;
 
 /**
  * data naar database sturen werkt, alleen responses niet :( kijk video hoe hij
- * het doet :( fully responsive(every inch) buttons in verschillende div's in
- * sidebar buttons zelfde grootte div in div en op 98% en als je hovert naar
- * 100% als je scrolt gaat de navbar mee en zie je waar je bent sidebar 100%
- * height, navbar on right side and height way smaller tekst op buttons bijv
+ * het doet
+ *  :) 
+ * fully responsive(every inch) 
+ * 
  * donkerder op hover Bij de tekst wel een achtergrond als je op een beoaalde
  * hoogte bent een pijl bij het juiste woord in de sidenavbar projects in the
  * footer
