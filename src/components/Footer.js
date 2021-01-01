@@ -4,7 +4,7 @@ import './css/Footer.css';
 
 function Footer() {
   return (
-    <div className="footerClass">
+    <div className="footerClass" id="footerID">
 	<h1 id="footerHeader">Made by<br></br> Me.</h1>
 		
     </div>

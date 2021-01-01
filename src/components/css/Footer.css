@@ -1,14 +1,14 @@
 .footerClass {
-	background: linear-gradient(to top, rgb(112, 218, 68) ,  rgb(88, 88, 88));
+	background: linear-gradient(to left, green 1%,lightgreen 30%, white 80%);
 	border-top: double 10px green;
 	height: 300px;
     width: 100%;
     text-align: center;
     float: left;
-    z-index: -2;
 }
 
 #footerHeader {
+	z-index: 5;
 	float: right;
 	color: black;
 	font-size: 30px;

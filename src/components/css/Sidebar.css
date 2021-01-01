@@ -10,7 +10,7 @@ ul {
 #linkList {
 	display: inline-grid;
 	position: fixed;
-	background: linear-gradient(to right, #213897 1%,#2989d8 50%, white 100%);
+	background: linear-gradient(to right, green 1%,lightgreen 50%, white 100%);
 	border-right: double 10px black;
 	margin: 0px;
 	padding: 0px;
@@ -18,11 +18,60 @@ ul {
 	text-align: center;
 	width: 22rem;
 	padding-top: 2rem;
+	z-index: 0;
 }
 
-#upworkIMG, #linkedinIMG {
+#smallLinkList {
+	display: inline-grid;
+	position: fixed;
+	background: linear-gradient(to right, green 1%,lightgreen 50%, white 100%);
+	border-right: double 10px black;
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	text-align: center;
+	width:5rem;
+	padding-top: 1rem;
+	z-index: 0;
+	grid-template-columns: auto;
+	grid-row-gap: 5px;
+	transition: 0.9s;
+}
+
+
+#upworkIMG {
 	width: 200px;
 	height: 50px;
+	border: solid 2px black;
+	padding: 1rem;
+	border-radius: 6px;
+}
+
+#linkedinIMG {
+	width: 200px;
+	height: 50px;
+	border: solid 2px black;
+	padding: 1rem;
+	border-radius: 6px;
+}
+
+#aboutmeButton2, #contactButton2, #arrowButton2 {
+   width: 66px;
+   height: 66px;
+   padding: 1rem;
+   font-size: 20px;
+   font-family: 'JetBrains Mono', monospace;
+   background: none;
+   cursor: pointer;
+   text-align: center;
+   border: solid 2px black;
+   border-radius: 6px;
+}
+
+
+#linkedinIcon, #upworkIcon, #githubCat{
+	width: 30px;
+	height: 30px;
 	border: solid 2px black;
 	padding: 1rem;
 	border-radius: 6px;
@@ -36,7 +85,8 @@ ul {
 	border-radius: 6px;
 }
 
-#linkedinIMG:hover, #upworkIMG:hover, #githubIMG:hover, #arrowButton:hover, #aboutmeButton:hover, #contactButton:hover {
+#linkedinIMG:hover, #upworkIMG:hover, #githubIMG:hover, #arrowButton:hover, #aboutmeButton:hover, #contactButton:hover, 
+#linkedinIcon:hover, #upworkIcon:hover, #githubCat:hover, #aboutmeButton2:hover, #contactButton2:hover, #arrowButton2:hover {
 	border: solid 2px black;
     transition: 0.9s;
     border-radius: 6px;
