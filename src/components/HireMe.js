@@ -1,14 +1,20 @@
 import React from 'react';
 import './css/HireMe.css';
 
-const hireMe = () => window.location.replace("https://www.upwork.com/freelancers/~01361471f78248a9b3");
+const hireMe = () => {
+	window.scroll({
+		  top: 1810,
+		  behavior: 'smooth'
+		});
+}
 
 
 function HireMe() {
   return (
     <div className="hireMeClass">
+    <h2>Need a website?</h2>
     <h1 id="hireMeButton" onClick={hireMe}>Hire <br></br> Me.</h1>
-    <h2>Full stack developer</h2>
+    
     </div>
   );
 }

@@ -9,14 +9,14 @@ import githubCat from './img/github-icon.png';
 
 const aboutMeScroll = () => {
 	window.scroll({
-		  top: 440,
+		  top: 600,
 		  behavior: 'smooth'
 		});
 }
 
 const contactScroll = () => {
 	window.scroll({
-		  top: 1490,
+		  top: 1690,
 		  behavior: 'smooth'
 		});
 }

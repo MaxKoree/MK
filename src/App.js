@@ -5,6 +5,8 @@ import FirstPicture from './components/FirstPicture';
 import Particles from 'react-particles-js';
 import HireMe from './components/HireMe';
 import Contact from './components/Contact';
+const emailjs = require('emailjs-com');
+emailjs.init('user_eFbFfL2FoJtbHTkXQgxkA');
 
 const particlesOptions = {
 		 particles :{"number":{"value":400,"density":{"enable":true,"value_area":800}},"color":{"value":"#fff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":true,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":10,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":false,"distance":500,"color":"#ffffff","opacity":0.4,"width":2},"move":{"enable":true,"speed":6,"direction":"bottom","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"bubble"},"onclick":{"enable":true,"mode":"repulse"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":0.5}},"bubble":{"distance":400,"size":4,"duration":0.3,"opacity":1,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true};
@@ -17,7 +19,8 @@ class App extends Component {
 		this.state = {
 				width: 0, 
 				height: 0,
-				theposition: 0
+				theposition: 0,
+				executed: false
 		}
 		window.scrollTo(0, 0);
 		this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
@@ -77,6 +80,8 @@ class App extends Component {
 		const smallContact = document.getElementById("contactButton2");
 		const smallaboutMe = document.getElementById("aboutmeButton2");
 		const aboutMeButton = document.getElementById("aboutmeButton");
+		
+
 		return (
 			<div>
 				<Particles className='particles' 
@@ -86,13 +91,34 @@ class App extends Component {
 			<HireMe />	
 			<FirstPicture />
 			<Contact />
-			{(() => { 
-				if(this.state.theposition > 0 && this.state.theposition < 35 && this.checkHeight() && this.checkWidth() && document.readyState === "complete") {
+			{(() => {
+				if(document.readyState === "complete") {
+					document.getElementById('form').addEventListener('submit', function(event) {
+						event.preventDefault();
+						
+						this.contact_number.value = Math.random() * 100000 | 0;
+						emailjs.sendForm('service_8vmef3d', 'template_wbkmp1p', this)
+							.then(function() {
+								
+							}, function(error) {
+								console.log('FAILED...', error);
+							});
+						if(document.getElementById("submitButton") != null) {
+							document.getElementById("submitButton").value = 'Message sent';
+							document.getElementById("submitButton").disabled = true;
+						} 
+						if (document.getElementById("submitButton2") != null) {
+							document.getElementById("submitButton2").value = 'Message sent';
+							document.getElementById("submitButton2").disabled = true;
+						}
+					});
+				}
+				if(this.state.theposition > 0 && this.state.theposition < 21 && this.checkHeight() && this.checkWidth() && document.readyState === "complete") {
 					titleButton.style.transition = "0.3s";
 					titleButton.style.boxShadow = "4px 6px black";
 					aboutMeButton.style.boxShadow = "";
 					contactButton.style.boxShadow = "";
-				} else if(this.state.theposition > 0 && this.state.theposition < 35 && !this.checkHeight() && !this.checkWidth() && document.readyState === "complete") {
+				} else if(this.state.theposition > 0 && this.state.theposition < 21 && !this.checkHeight() && !this.checkWidth() && document.readyState === "complete") {
 					arrowButton.style.transition = " all 0.3s";
 					arrowButton.style.boxShadow = "4px 6px black";
 					smallaboutMe.style.boxShadow = "";
@@ -126,24 +152,21 @@ class App extends Component {
 
 export default App;
 
-/** 
+/**
  * 
  * 
  * 
- * als de button na de form gebruikt is is ie niet meer aan te klikken
- * bovenin: need a website? <br> Hire me
- * hire me knop gaat verwijst de input form
+ * als de button na de form gebruikt is is ie niet meer aan te klikken?
  * in de footer "ways I can help you"(1: website maken 2: be a part of a team 3: edit a website)
- * Full stack developer title onder about me
  * 
  * 
  * 
  * 
  * 
  * 
+ *  * implementeer de background generator maar dan dat de kleuren van de site
+ * veranderen
  * 
- *  * implementeer de background generator maar dan dat de kleuren van de site veranderen
-
  * 
  * 
  * 

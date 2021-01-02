@@ -1,11 +1,12 @@
 .hireMeClass {
-    height: 1px;
-    width: 500px;
+    height: 36rem;
+    width: 60rem;;
     margin: 0px 0px 0px 500px;
     z-index: -2;
 }
 
 #hireMeButton {
+	width: 30rem;;
 	font-size: 160px;
 	cursor: pointer;
 	font-family: 'JetBrains Mono', monospace;
@@ -14,7 +15,7 @@
 
 #hireMeButton:hover {
 	transition: 1s;
-	color: rgb(112, 218, 68);
+	color: lightblue;
 }
 
 h1 {
@@ -24,7 +25,7 @@ h1 {
 
 h2 {
 	margin: 0;
-	float: right;
+	float: left;
 	font-family: 'JetBrains Mono', monospace;
 	font-size: 90px;
 }

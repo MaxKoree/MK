@@ -68,7 +68,6 @@ render() {
     	     	    	<h1 className="aboutmeHeader">About me</h1>
     	     	    	<img src={FirstPicture} alt="Me :)" id="firstPicture"></img>
     	     	    	<div className="textBackground"></div>
-    	     	    			<div className="contactBackground"></div>
     	     		    	<p>Hey, i&#39;m Max Koree. 18 years old. I live in Amsterdam. I&#39;m working towards the full stack developer title.
     	     		    	I started studying computer science when I was 15 years old. I&#39;m a student at the MBO college Zuid-Oost in Amsterdam.
     	     		    	I have learned a lot since, I had an intership at ABN AMRO Bank N.V., IT department (Head office).

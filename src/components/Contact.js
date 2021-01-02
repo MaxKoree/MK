@@ -15,6 +15,26 @@ class Contact extends React.Component {
 	    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
 	  }
 	  
+	  onSubmit() {
+		  const emailjs = require('emailjs-com');
+		  emailjs.init('user_eFbFfL2FoJtbHTkXQgxkA');
+
+		  window.onload = function() {
+		      document.getElementById('form2').addEventListener('submit', function(event) {
+		          event.preventDefault();
+		          // generate a five digit number for the contact_number variable
+		          this.contact_number.value = Math.random() * 100000 | 0;
+		          // these IDs from the previous steps
+		          emailjs.sendForm('service_8vmef3d', 'template_wbkmp1p', this)
+		              .then(function() {
+		                  alert('SUCCESS!');
+		              }, function(error) {
+		                  console.log('FAILED...', error);
+		              });
+		      })
+		  }
+	  }
+	  
 	  componentDidMount() {
 		  this.updateWindowDimensions();
 		  window.addEventListener('resize', this.updateWindowDimensions);
@@ -30,7 +50,7 @@ class Contact extends React.Component {
 		}
 		
 		checkWidth() { 
-			 if(this.state.width > 1420) {
+			 if(this.state.width > 1020) {
 				return true;
 			 }	else return false;
 		}
@@ -59,8 +79,10 @@ class Contact extends React.Component {
 		    return (
 		    <div className="contactClass">
 		    {!tooSmall ? (
+
 		    		  <div id="smallContact">
 		    		  <h1 id="contactMeHeader">Contact</h1>
+		    		  <h2 id="title">Full stack developer</h2>
 					    <div className="contactMeClass" id="contactMeClass">
 					    	<article id="article">
 					    	<form  id="form">
@@ -87,14 +109,14 @@ class Contact extends React.Component {
 					    </div>
     			      ) : (
     			    		  <div>	
-    			    	     
-    			    	      
     	    		  <h1 id="contactMeHeader">Contact</h1>
+    	    		  <h2 id="bigTitle">Full stack developer</h2>
     			    		  <div className="myInfo" id="myInfo">
 						    	<h6>My information<br></br>&#8595;</h6>
 						    	<b>** Business inquiries only **</b><br></br><br></br>
 						    	<b>maxkoree@yahoo.de</b><br></br><br></br>
     						    <div className="contactMeClass">
+    						    <div className="contactBackground"></div>
     						    	<article>
     						    	<form id='form'>
     							    	<h3>Ask me fast</h3>
@@ -111,6 +133,7 @@ class Contact extends React.Component {
     						    	</article>
     						    </div>
 						    </div>
+						  
     				</div>
     			  )}
 			

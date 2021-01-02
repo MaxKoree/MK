@@ -162,6 +162,20 @@ article {
 	box-shadow: 4px 6px black;
 }
 
+
+.contactBackground {
+	margin-top: -17rem;
+	margin-left: -6rem;
+	-webkit-transform: scaleX(-1);
+  	transform: scaleX(-1) skew(20deg);
+	position: absolute;
+	background-color: lightblue;
+	height: 60rem;
+	width: 50rem;
+	border-radius: 30px;
+	z-index: -5;
+}
+
 #questionLabel {
  	font-size: 30px;
  	float: left;
@@ -226,4 +240,21 @@ article {
 	border-radius: 30px;
 	z-index: -2;
 	opacity: 0.5;
+}
+
+#title {
+	text-align: center;
+	margin-left: 9rem;
+	margin-top: 6rem;
+	width: 100%;
+	font-size: 60px;
+	transform: skew(10deg);
+}
+#bigTitle {
+	text-align: center;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	width: 100%;
+	font-size: 60px;
+	transform: skew(10deg);
 }
