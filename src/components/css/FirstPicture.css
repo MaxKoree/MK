@@ -76,7 +76,7 @@ p {
 	height: 75rem;
 	width: 60rem;
 	border-radius: 30px;
-	z-index: -2;
+	z-index: -5;
 }
 
 .inputBackground {

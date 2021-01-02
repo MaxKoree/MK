@@ -6,10 +6,8 @@ import Particles from 'react-particles-js';
 import HireMe from './components/HireMe';
 import Contact from './components/Contact';
 
-
-
 const particlesOptions = {
-		 particles :{"number":{"value":82,"density":{"enable":false,"value_area":2762.147530245516}},"color":{"value":"#f7f7f7"},"shape":{"type":"circle","stroke":{"width":6,"color":"#e1e1e1"},"polygon":{"nb_sides":8},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":true,"anim":{"enable":true,"speed":1,"opacity_min":0.1,"sync":true}},"size":{"value":39.459250432078804,"random":true,"anim":{"enable":true,"speed":60.86427267194163,"size_min":0,"sync":true}},"line_linked":{"enable":true,"distance":0,"color":"#ffffff","opacity":0.3685543056757366,"width":1.4421690222094041},"move":{"enable":true,"speed":11.048590120982064,"direction":"top","random":true,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":true,"rotateX":631.3480069132609,"rotateY":473.51100518494565}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"bubble"},"onclick":{"enable":true,"mode":"repulse"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":133.90139987827155,"size":81.15236356258882,"duration":4.13877054169203,"opacity":0.9819435991073248,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true};
+		 particles :{"number":{"value":400,"density":{"enable":true,"value_area":800}},"color":{"value":"#fff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":true,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":10,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":false,"distance":500,"color":"#ffffff","opacity":0.4,"width":2},"move":{"enable":true,"speed":6,"direction":"bottom","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"bubble"},"onclick":{"enable":true,"mode":"repulse"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":0.5}},"bubble":{"distance":400,"size":4,"duration":0.3,"opacity":1,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true};
 
 
 
@@ -27,7 +25,7 @@ class App extends Component {
 	
 	
 	 componentDidMount() {
-	 fetch('http://localhost:3002').then(response => response.json());
+	 fetch('http://localhost:3001').then(response => response.json());
 	  this.updateWindowDimensions();
 	  window.addEventListener('resize', this.updateWindowDimensions);
 	  window.addEventListener('scroll', this.listenToScroll);
@@ -88,7 +86,7 @@ class App extends Component {
 			<HireMe />	
 			<FirstPicture />
 			<Contact />
-			{(() => {
+			{(() => { 
 				if(this.state.theposition > 0 && this.state.theposition < 35 && this.checkHeight() && this.checkWidth() && document.readyState === "complete") {
 					titleButton.style.transition = "0.3s";
 					titleButton.style.boxShadow = "4px 6px black";
@@ -99,8 +97,7 @@ class App extends Component {
 					arrowButton.style.boxShadow = "4px 6px black";
 					smallaboutMe.style.boxShadow = "";
 					smallContact.style.boxShadow = "";
-				}
-				if(this.state.theposition > 21 && this.state.theposition < 64 && this.checkHeight() && this.checkWidth() && document.readyState === "complete") {
+				} else if(this.state.theposition > 21 && this.state.theposition < 64 && this.checkHeight() && this.checkWidth() && document.readyState === "complete") {
 					aboutMeButton.style.transition = "0.3s";
 					aboutMeButton.style.boxShadow = "4px 6px black";
 					titleButton.style.boxShadow = "";
@@ -110,8 +107,7 @@ class App extends Component {
 					smallaboutMe.style.boxShadow = "4px 6px black";
 					arrowButton.style.boxShadow = "";
 					smallContact.style.boxShadow = "";
-				}
-				if(this.state.theposition > 64 && this.checkHeight() && this.checkWidth() && document.readyState === "complete") {
+				} else if(this.state.theposition > 64 && this.checkHeight() && this.checkWidth() && document.readyState === "complete") {
 					contactButton.style.transition = "0.3s";
 					contactButton.style.boxShadow = "4px 6px black";
 					aboutMeButton.style.boxShadow = "";
@@ -130,14 +126,15 @@ class App extends Component {
 
 export default App;
 
-/**
- * data naar database sturen werkt, alleen responses niet :( kijk video hoe hij
- * het doet
- *  :) 
- * fully responsive(wanneer scherm kleiner wordt maak de navbar dun en met kleine icons) 
- * projects in the footer
- * implementeer de background generator maar dan dat de kleuren van de site veranderen ook bij de particles
- * when its too small change z-index of blackgrounds so bubbles are in front
+/** 
+ * 
+ * 
+ * 
+ * als de button na de form gebruikt is is ie niet meer aan te klikken
+ * bovenin: need a website? <br> Hire me
+ * hire me knop gaat verwijst de input form
+ * in de footer "ways I can help you"(1: website maken 2: be a part of a team 3: edit a website)
+ * Full stack developer title onder about me
  * 
  * 
  * 
@@ -145,14 +142,8 @@ export default App;
  * 
  * 
  * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
+ *  * implementeer de background generator maar dan dat de kleuren van de site veranderen
+
  * 
  * 
  * 

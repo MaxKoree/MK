@@ -10,11 +10,33 @@
     <title>Max Koree</title>
   </head>
   
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+   <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+
+            emailjs.init('user_eFbFfL2FoJtbHTkXQgxkA');
+        })();
+    </script>
   
-  
-  
-  
-  
+  <script type="text/javascript">
+
+        window.onload = function() {
+            document.getElementById('form2').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_8vmef3d', 'template_wbkmp1p', this)
+                    .then(function() {
+                        alert('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+            	});
+            });
+        }
+    </script>
+   
   
   <body>
     <div id="root"></div>
