@@ -69,8 +69,6 @@ class Sidebar extends React.Component {
 render() {
 	const tooSmall = this.checkHeight();
 	const tooSmall2 = this.checkWidth();
-	console.log("w: " + this.state.width);
-	console.log("h: " + this.state.height);
     return (
     		<div className="sideBarClass">
     	    {tooSmall || tooSmall2 ? (

@@ -13,7 +13,7 @@ import Footer from './components/Footer';
 const emailjs = require('emailjs-com');
 emailjs.init('user_eFbFfL2FoJtbHTkXQgxkA');
 const particlesOptions = {
-		 particles :{"number":{"value":400,"density":{"enable":true,"value_area":800}},"color":{"value":"#fff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":true,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":10,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":false,"distance":500,"color":"#ffffff","opacity":0.4,"width":2},"move":{"enable":true,"speed":6,"direction":"bottom","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"bubble"},"onclick":{"enable":true,"mode":"repulse"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":0.5}},"bubble":{"distance":400,"size":4,"duration":0.3,"opacity":1,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true};
+		 particles :{"number":{"value":80,"density":{"enable":true,"value_area":800}},"color":{"value":"#3ecd20"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"bubble"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true};
 
 
 
@@ -65,13 +65,13 @@ class App extends Component {
 		  })
 		}
 	
-		checkHeight() { 
-			 if(this.state.height > 735) {
+		heightAbove600() { 
+			 if(this.state.height > 600) {
 				return true;
 			 }	else return false;
 		}
 		
-		checkWidth() { 
+		widthAbove1420() { 
 			 if(this.state.width > 1420) {
 				return true;
 			 }	else return false;
@@ -102,7 +102,6 @@ class App extends Component {
 						this.contact_number.value = Math.random() * 100000 | 0;
 						emailjs.sendForm('service_8vmef3d', 'template_wbkmp1p', this)
 							.then(function() {
-								
 							}, function(error) {
 								console.log('FAILED...', error);
 							});
@@ -116,37 +115,52 @@ class App extends Component {
 						}
 					});
 				}
-				// if(this.state.theposition > 0 && this.state.theposition < 16 && this.checkHeight() && this.checkWidth() && document.readyState === "complete") {
-				// 	titleButton.style.transition = "0.3s";
-				// 	titleButton.style.boxShadow = "4px 6px black";
-				// 	aboutMeButton.style.boxShadow = "";
-				// 	contactButton.style.boxShadow = "";
-				// } else if(this.state.theposition > 0 && this.state.theposition < 16 && !this.checkHeight() && !this.checkWidth() && document.readyState === "complete") {
-				// 	arrowButton.style.transition = " all 0.3s";
-				// 	arrowButton.style.boxShadow = "4px 6px black";
-				// 	smallaboutMe.style.boxShadow = "";
-				// 	smallContact.style.boxShadow = "";
-				// } else if(this.state.theposition > 16 && this.state.theposition < 54 && this.checkHeight() && this.checkWidth() && document.readyState === "complete") {
-				// 	aboutMeButton.style.transition = "0.3s";
-				// 	aboutMeButton.style.boxShadow = "4px 6px black";
-				// 	titleButton.style.boxShadow = "";
-				// 	contactButton.style.boxShadow = "";
-				// } else if(this.state.theposition > 16 && this.state.theposition < 54 && !this.checkHeight() && !this.checkWidth() && document.readyState === "complete") {
-				// 	smallaboutMe.style.transition = "0.3s";
-				// 	smallaboutMe.style.boxShadow = "4px 6px black";
-				// 	arrowButton.style.boxShadow = "";
-				// 	smallContact.style.boxShadow = "";
-				// } else if(this.state.theposition > 54 && this.checkHeight() && this.checkWidth() && document.readyState === "complete") {
-				// 	contactButton.style.transition = "0.3s";
-				// 	contactButton.style.boxShadow = "4px 6px black";
-				// 	aboutMeButton.style.boxShadow = "";
-				// 	titleButton.style.boxShadow = "";
-				// } else if(this.state.theposition > 54 && !this.checkHeight() && !this.checkWidth() && document.readyState === "complete") {
-				// 	smallContact.style.transition = "0.3s";
-				// 	smallContact.style.boxShadow = "4px 6px black";
-				// 	arrowButton.style.boxShadow = "";
-				// 	smallaboutMe.style.boxShadow = "";
-				// }
+				if(this.state.theposition > 0 && this.state.theposition < 16 && this.heightAbove600() && this.widthAbove1420() && document.readyState === "complete") {
+					titleButton.style.transition = "0.3s";
+					titleButton.style.boxShadow = "4px 6px black";
+					aboutMeButton.style.boxShadow = "none";
+					contactButton.style.boxShadow = "none";
+				} else if(this.state.theposition > 0 && this.state.theposition < 16 && !this.heightAbove600() && document.readyState === "complete") {
+					arrowButton.style.transition = " all 0.3s";
+					arrowButton.style.boxShadow = "4px 6px black";
+					smallaboutMe.style.boxShadow = "none";
+					smallContact.style.boxShadow = "none";
+				} else if(this.state.theposition > 0 && this.state.theposition < 16 && !this.widthAbove1420() && document.readyState === "complete") {
+					arrowButton.style.transition = " all 0.3s";
+					arrowButton.style.boxShadow = "4px 6px black";
+					smallaboutMe.style.boxShadow = "none";
+					smallContact.style.boxShadow = "none";
+				} else if(this.state.theposition > 16 && this.state.theposition < 54 && this.heightAbove600() && this.widthAbove1420() && document.readyState === "complete") {
+					aboutMeButton.style.transition = "0.3s";
+					aboutMeButton.style.boxShadow = "4px 6px black";
+					titleButton.style.boxShadow = "none";
+					contactButton.style.boxShadow = "none";
+				} else if(this.state.theposition > 16 && this.state.theposition < 54 && !this.heightAbove600() && document.readyState === "complete") {
+					smallaboutMe.style.transition = "0.3s";
+					smallaboutMe.style.boxShadow = "4px 6px black";
+					arrowButton.style.boxShadow = "none";
+					smallContact.style.boxShadow = "none";
+				} else if(this.state.theposition > 16 && this.state.theposition < 54 && !this.widthAbove1420() && document.readyState === "complete") {
+					smallaboutMe.style.transition = "0.3s";
+					smallaboutMe.style.boxShadow = "4px 6px black";
+					arrowButton.style.boxShadow = "none";
+					smallContact.style.boxShadow = "none";
+				} else if(this.state.theposition > 54 && this.heightAbove600() && this.widthAbove1420() && document.readyState === "complete") {
+					contactButton.style.transition = "0.3s";
+					contactButton.style.boxShadow = "4px 6px black";
+					aboutMeButton.style.boxShadow = "none";
+					titleButton.style.boxShadow = "none";
+				} else if(this.state.theposition > 54 && !this.heightAbove600() && document.readyState === "complete") {
+					smallContact.style.transition = "0.3s";
+					smallContact.style.boxShadow = "4px 6px black";
+					arrowButton.style.boxShadow = "none";
+					smallaboutMe.style.boxShadow = "none";
+				} else if(this.state.theposition > 54 && !this.widthAbove1420() && document.readyState === "complete") {
+					smallContact.style.transition = "0.3s";
+					smallContact.style.boxShadow = "4px 6px black";
+					arrowButton.style.boxShadow = "none";
+					smallaboutMe.style.boxShadow = "none";
+				}
 				})()}
 			</div>
 		);
@@ -162,8 +176,6 @@ export default App;
 
 /**
  * 
- * meer functionaliteit ipv design, later ga je naar intelliJ en alles opnieuw indelen
- * responsive (alles float left);
  * 
  * 
  * 
