@@ -9,7 +9,7 @@ import githubCat from './img/github-icon.png';
 
 const aboutMeScroll = () => {
 	window.scroll({
-		  top: 600,
+		  top: 710,
 		  behavior: 'smooth'
 		});
 }
@@ -55,13 +55,13 @@ class Sidebar extends React.Component {
 			}
 			
 			checkHeight() { 
-				 if(this.state.height < 735) {
+				 if(this.state.height < 600) {
 					return true;
 				 }	else return false;
 			}
 			
 			checkWidth() { 
-				 if(this.state.width < 1620) {
+				 if(this.state.width < 1420) {
 					return true;
 				 }	else return false;
 			}
@@ -69,10 +69,13 @@ class Sidebar extends React.Component {
 render() {
 	const tooSmall = this.checkHeight();
 	const tooSmall2 = this.checkWidth();
+	console.log("w: " + this.state.width);
+	console.log("h: " + this.state.height);
     return (
     		<div className="sideBarClass">
     	    {tooSmall || tooSmall2 ? (
     	    			    	    <ul id="smallLinkList">
+    	    			    	    <script>alert("1")</script>
     	    	    	    	    <ul>
     	    	    	    	    <button id="arrowButton2" onClick={upScroll}>&#8593;</button>
     	    	    	    	    </ul>

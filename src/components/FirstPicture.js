@@ -36,7 +36,7 @@ class PictureClass extends React.Component {
 render() {
 	const tooSmall = this.checkWidth();
   return (
-    <div className="firstPictureClass">
+    <div >
     	    	
     	    	{tooSmall ? (
     	    			  <div className="firstPictureClass2">
@@ -60,11 +60,10 @@ render() {
         		    	- PHP<br></br>
         		    	- Java<br></br><br></br>
         		    	I&#39;m also very motivated to learn a lot more :)</p>
-    	    	<h1 className="aboutmeHeader" id="aboutmeHeader">About me</h1>
         	    	
         	    </div>
     	    			) : (
-    	    			<div>
+    	    			<div className="firstPictureClass">
     	     	    	<h1 className="aboutmeHeader">About me</h1>
     	     	    	<img src={FirstPicture} alt="Me :)" id="firstPicture"></img>
     	     	    	<div className="textBackground"></div>

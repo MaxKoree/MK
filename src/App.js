@@ -5,9 +5,13 @@ import FirstPicture from './components/FirstPicture';
 import Particles from 'react-particles-js';
 import HireMe from './components/HireMe';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
+
+
+
+
 const emailjs = require('emailjs-com');
 emailjs.init('user_eFbFfL2FoJtbHTkXQgxkA');
-
 const particlesOptions = {
 		 particles :{"number":{"value":400,"density":{"enable":true,"value_area":800}},"color":{"value":"#fff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":true,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":10,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":false,"distance":500,"color":"#ffffff","opacity":0.4,"width":2},"move":{"enable":true,"speed":6,"direction":"bottom","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"bubble"},"onclick":{"enable":true,"mode":"repulse"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":0.5}},"bubble":{"distance":400,"size":4,"duration":0.3,"opacity":1,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true};
 
@@ -68,7 +72,7 @@ class App extends Component {
 		}
 		
 		checkWidth() { 
-			 if(this.state.width > 1620) {
+			 if(this.state.width > 1420) {
 				return true;
 			 }	else return false;
 		}
@@ -80,8 +84,6 @@ class App extends Component {
 		const smallContact = document.getElementById("contactButton2");
 		const smallaboutMe = document.getElementById("aboutmeButton2");
 		const aboutMeButton = document.getElementById("aboutmeButton");
-		
-
 		return (
 			<div>
 				<Particles className='particles' 
@@ -91,6 +93,7 @@ class App extends Component {
 			<HireMe />	
 			<FirstPicture />
 			<Contact />
+			<Footer />
 			{(() => {
 				if(document.readyState === "complete") {
 					document.getElementById('form').addEventListener('submit', function(event) {
@@ -113,37 +116,37 @@ class App extends Component {
 						}
 					});
 				}
-				if(this.state.theposition > 0 && this.state.theposition < 21 && this.checkHeight() && this.checkWidth() && document.readyState === "complete") {
-					titleButton.style.transition = "0.3s";
-					titleButton.style.boxShadow = "4px 6px black";
-					aboutMeButton.style.boxShadow = "";
-					contactButton.style.boxShadow = "";
-				} else if(this.state.theposition > 0 && this.state.theposition < 21 && !this.checkHeight() && !this.checkWidth() && document.readyState === "complete") {
-					arrowButton.style.transition = " all 0.3s";
-					arrowButton.style.boxShadow = "4px 6px black";
-					smallaboutMe.style.boxShadow = "";
-					smallContact.style.boxShadow = "";
-				} else if(this.state.theposition > 21 && this.state.theposition < 64 && this.checkHeight() && this.checkWidth() && document.readyState === "complete") {
-					aboutMeButton.style.transition = "0.3s";
-					aboutMeButton.style.boxShadow = "4px 6px black";
-					titleButton.style.boxShadow = "";
-					contactButton.style.boxShadow = "";
-				} else if(this.state.theposition > 21 && this.state.theposition < 64 && !this.checkHeight() && !this.checkWidth() && document.readyState === "complete") {
-					smallaboutMe.style.transition = "0.3s";
-					smallaboutMe.style.boxShadow = "4px 6px black";
-					arrowButton.style.boxShadow = "";
-					smallContact.style.boxShadow = "";
-				} else if(this.state.theposition > 64 && this.checkHeight() && this.checkWidth() && document.readyState === "complete") {
-					contactButton.style.transition = "0.3s";
-					contactButton.style.boxShadow = "4px 6px black";
-					aboutMeButton.style.boxShadow = "";
-					titleButton.style.boxShadow = "";
-				} else if(this.state.theposition > 64 && !this.checkHeight() && !this.checkWidth() && document.readyState === "complete") {
-					smallContact.style.transition = "0.3s";
-					smallContact.style.boxShadow = "4px 6px black";
-					arrowButton.style.boxShadow = "";
-					smallaboutMe.style.boxShadow = "";
-				}
+				// if(this.state.theposition > 0 && this.state.theposition < 16 && this.checkHeight() && this.checkWidth() && document.readyState === "complete") {
+				// 	titleButton.style.transition = "0.3s";
+				// 	titleButton.style.boxShadow = "4px 6px black";
+				// 	aboutMeButton.style.boxShadow = "";
+				// 	contactButton.style.boxShadow = "";
+				// } else if(this.state.theposition > 0 && this.state.theposition < 16 && !this.checkHeight() && !this.checkWidth() && document.readyState === "complete") {
+				// 	arrowButton.style.transition = " all 0.3s";
+				// 	arrowButton.style.boxShadow = "4px 6px black";
+				// 	smallaboutMe.style.boxShadow = "";
+				// 	smallContact.style.boxShadow = "";
+				// } else if(this.state.theposition > 16 && this.state.theposition < 54 && this.checkHeight() && this.checkWidth() && document.readyState === "complete") {
+				// 	aboutMeButton.style.transition = "0.3s";
+				// 	aboutMeButton.style.boxShadow = "4px 6px black";
+				// 	titleButton.style.boxShadow = "";
+				// 	contactButton.style.boxShadow = "";
+				// } else if(this.state.theposition > 16 && this.state.theposition < 54 && !this.checkHeight() && !this.checkWidth() && document.readyState === "complete") {
+				// 	smallaboutMe.style.transition = "0.3s";
+				// 	smallaboutMe.style.boxShadow = "4px 6px black";
+				// 	arrowButton.style.boxShadow = "";
+				// 	smallContact.style.boxShadow = "";
+				// } else if(this.state.theposition > 54 && this.checkHeight() && this.checkWidth() && document.readyState === "complete") {
+				// 	contactButton.style.transition = "0.3s";
+				// 	contactButton.style.boxShadow = "4px 6px black";
+				// 	aboutMeButton.style.boxShadow = "";
+				// 	titleButton.style.boxShadow = "";
+				// } else if(this.state.theposition > 54 && !this.checkHeight() && !this.checkWidth() && document.readyState === "complete") {
+				// 	smallContact.style.transition = "0.3s";
+				// 	smallContact.style.boxShadow = "4px 6px black";
+				// 	arrowButton.style.boxShadow = "";
+				// 	smallaboutMe.style.boxShadow = "";
+				// }
 				})()}
 			</div>
 		);
@@ -152,30 +155,15 @@ class App extends Component {
 
 export default App;
 
+
+
+
+
+
 /**
  * 
- * 
- * 
- * als de button na de form gebruikt is is ie niet meer aan te klikken?
- * in de footer "ways I can help you"(1: website maken 2: be a part of a team 3: edit a website)
- * 
- * 
- * 
- * 
- * 
- * 
- *  * implementeer de background generator maar dan dat de kleuren van de site
- * veranderen
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
+ * meer functionaliteit ipv design, later ga je naar intelliJ en alles opnieuw indelen
+ * responsive (alles float left);
  * 
  * 
  * 
@@ -183,6 +171,9 @@ export default App;
  * 
  * 
  */
+
+
+
 
 
 

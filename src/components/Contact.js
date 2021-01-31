@@ -81,7 +81,6 @@ class Contact extends React.Component {
 		    {!tooSmall ? (
 
 		    		  <div id="smallContact">
-		    		  <h1 id="contactMeHeader">Contact</h1>
 		    		  <h2 id="title">Full stack developer</h2>
 					    <div className="contactMeClass" id="contactMeClass">
 					    	<article id="article">
@@ -101,20 +100,12 @@ class Contact extends React.Component {
 						    </form>
 					    	</article>
 					    </div>
-						<div className="myInfo" id="myInfo2">
-				    	<h6>My information<br></br>&#8595;</h6>
-				    	<b>** Business inquiries only **</b><br></br><br></br>
-				    	<b>maxkoree@yahoo.de</b>
-				    	</div>
 					    </div>
     			      ) : (
-    			    		  <div>	
+    			    		  <div className="bigContact">	
     	    		  <h1 id="contactMeHeader">Contact</h1>
     	    		  <h2 id="bigTitle">Full stack developer</h2>
-    			    		  <div className="myInfo" id="myInfo">
-						    	<h6>My information<br></br>&#8595;</h6>
-						    	<b>** Business inquiries only **</b><br></br><br></br>
-						    	<b>maxkoree@yahoo.de</b><br></br><br></br>
+    			    		
     						    <div className="contactMeClass">
     						    <div className="contactBackground"></div>
     						    	<article>
@@ -132,7 +123,6 @@ class Contact extends React.Component {
     							    </form>
     						    	</article>
     						    </div>
-						    </div>
 						  
     				</div>
     			  )}
