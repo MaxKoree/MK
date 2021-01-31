@@ -11,14 +11,14 @@
 
 #footerTitle {
 	margin-top: 3rem;
-	margin-left: 6rem;
+	margin-left: 12rem;
 	font-size: 50px;
 	width: 100%
 }
 
 .footerGrid {
 	display: inline-grid;
-	margin-left: 7rem;
+	margin-left: 19rem;
 	padding: 0px;
 	text-align: center;
 	padding-top: 1rem;

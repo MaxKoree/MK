@@ -81,13 +81,11 @@ class Contact extends React.Component {
 		    {!tooSmall ? (
 
 		    		  <div id="smallContact">
-		    		  <h2 id="title">Full stack developer</h2>
 					    <div className="contactMeClass" id="contactMeClass">
 					    	<article id="article">
 					    	<form  id="form">
-			    			<div id="contactBackground"></div>
 	     	    	    	<div id="inputBackground"></div>  
-						    	<h3>Ask me fast</h3>
+						    	<h3>Send email</h3>
 						    	 <input type="hidden" name="contact_number" />
 						    	<label htmlFor="nameInput2" id="nameLabel2">Name:</label><br></br><br></br>
 						    	<input id="nameInput2" type="text"  name="user_name" onChange={this.onNameChange} required></input> <br></br><br></br><br></br><br></br>
@@ -104,13 +102,11 @@ class Contact extends React.Component {
     			      ) : (
     			    		  <div className="bigContact">	
     	    		  <h1 id="contactMeHeader">Contact</h1>
-    	    		  <h2 id="bigTitle">Full stack developer</h2>
-    			    		
     						    <div className="contactMeClass">
     						    <div className="contactBackground"></div>
     						    	<article>
     						    	<form id='form'>
-    							    	<h3>Ask me fast</h3>
+    							    	<h3>Send email</h3>
     							    	<input type="hidden" name="contact_number" />
     							    	<label htmlFor="nameInput" id="nameLabel">Name:</label><br></br><br></br>
     							    	<input id="nameInput" type="text"  name="user_name" onChange={this.onNameChange} required></input> <br></br><br></br><br></br><br></br>
