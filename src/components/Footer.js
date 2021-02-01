@@ -9,7 +9,7 @@ function Footer() {
 		<div className="footerGrid">
 		<span id="span1"><b>Create website<br></br>&#10003;</b></span>
 		<span id="span2"><b>Edit your website<br></br>&#189;</b></span>
-		<span id="span3"><b>Be part of your developer team<br></br>&#8364;</b></span>
+		<span id="span3"><b>Be part of a developer team<br></br>&#8364;</b></span>
 		</div>
     </div>
   );

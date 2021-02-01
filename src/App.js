@@ -13,7 +13,7 @@ import Footer from './components/Footer';
 const emailjs = require('emailjs-com');
 emailjs.init('user_eFbFfL2FoJtbHTkXQgxkA');
 const particlesOptions = {
-		 particles :{"number":{"value":80,"density":{"enable":true,"value_area":800}},"color":{"value":"#3ecd20"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"bubble"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true};
+		 particles :{"number":{"value":9,"density":{"enable":false,"value_area":800}},"color":{"value":"#00ff2d"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":118.37775129623643,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":420,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true};
 
 
 
@@ -24,7 +24,7 @@ class App extends Component {
 				width: 0, 
 				height: 0,
 				theposition: 0,
-				executed: false
+				i: 1
 		}
 		window.scrollTo(0, 0);
 		this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
@@ -77,6 +77,19 @@ class App extends Component {
 			 }	else return false;
 		}
 
+		titleButtonShadow() {
+			if (this.state.theposition > 0 && this.state.theposition < 16 && this.heightAbove600() && this.widthAbove1420()) {
+				return true
+			} else return false
+		}
+
+		executed() {
+			if(this.state.i === 1) {
+				return false
+			} else return true
+		}
+	
+
 	render() {
 		const titleButton = document.getElementById("arrowButton");
 		const arrowButton = document.getElementById("arrowButton2");
@@ -95,27 +108,7 @@ class App extends Component {
 			<Contact />
 			<Footer />
 			{(() => {
-				if(document.readyState === "complete") {
-					document.getElementById('form').addEventListener('submit', function(event) {
-						event.preventDefault();
-						
-						this.contact_number.value = Math.random() * 100000 | 0;
-						emailjs.sendForm('service_8vmef3d', 'template_wbkmp1p', this)
-							.then(function() {
-							}, function(error) {
-								console.log('FAILED...', error);
-							});
-						if(document.getElementById("submitButton") != null) {
-							document.getElementById("submitButton").value = 'Message sent';
-							document.getElementById("submitButton").disabled = true;
-						} 
-						if (document.getElementById("submitButton2") != null) {
-							document.getElementById("submitButton2").value = 'Message sent';
-							document.getElementById("submitButton2").disabled = true;
-						}
-					});
-				}
-				if(this.state.theposition > 0 && this.state.theposition < 16 && this.heightAbove600() && this.widthAbove1420() && document.readyState === "complete") {
+				if(this.titleButtonShadow() && document.readyState === "complete") {
 					titleButton.style.transition = "0.3s";
 					titleButton.style.boxShadow = "4px 6px black";
 					aboutMeButton.style.boxShadow = "none";
@@ -177,7 +170,8 @@ export default App;
 /**
  * 
  * 
- * 
+ * verander if statements naar functies...
+ * :)
  * 
  * 
  * 

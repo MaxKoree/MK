@@ -1,5 +1,27 @@
 import React from 'react';
 import './css/Contact.css';
+import emailjs from 'emailjs-com';
+emailjs.init('user_eFbFfL2FoJtbHTkXQgxkA');
+
+const sendEmail = (e)  => {
+	e.preventDefault();
+
+	emailjs.sendForm('service_8vmef3d', 'template_wbkmp1p', e.target, 'user_eFbFfL2FoJtbHTkXQgxkA')
+	  .then((result) => {
+		  	if(document.getElementById("submitButton") != null) {
+			document.getElementById("submitButton").value = 'Message sent';
+			document.getElementById("submitButton").disabled = true;
+			} 
+			if (document.getElementById("submitButton2") != null) {
+			document.getElementById("submitButton2").value = 'Message sent';
+			document.getElementById("submitButton2").disabled = true;
+			}
+	  }, (error) => {
+		  console.log(error.text);
+		  
+	  });
+
+  }
 
 class Contact extends React.Component {
 	  constructor(props) {
@@ -14,27 +36,7 @@ class Contact extends React.Component {
 	    }
 	    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
 	  }
-	  
-	  onSubmit() {
-		  const emailjs = require('emailjs-com');
-		  emailjs.init('user_eFbFfL2FoJtbHTkXQgxkA');
-
-		  window.onload = function() {
-		      document.getElementById('form2').addEventListener('submit', function(event) {
-		          event.preventDefault();
-		          // generate a five digit number for the contact_number variable
-		          this.contact_number.value = Math.random() * 100000 | 0;
-		          // these IDs from the previous steps
-		          emailjs.sendForm('service_8vmef3d', 'template_wbkmp1p', this)
-		              .then(function() {
-		                  alert('SUCCESS!');
-		              }, function(error) {
-		                  console.log('FAILED...', error);
-		              });
-		      })
-		  }
-	  }
-	  
+  
 	  componentDidMount() {
 		  this.updateWindowDimensions();
 		  window.addEventListener('resize', this.updateWindowDimensions);
@@ -83,7 +85,7 @@ class Contact extends React.Component {
 		    		  <div id="smallContact">
 					    <div className="contactMeClass" id="contactMeClass">
 					    	<article id="article">
-					    	<form  id="form">
+					    	<form  id="form" onSubmit={sendEmail}>
 	     	    	    	<div id="inputBackground"></div>  
 						    	<h3>Contact me</h3>
 						    	 <input type="hidden" name="contact_number" />
@@ -105,7 +107,7 @@ class Contact extends React.Component {
     						    <div className="contactMeClass">
     						    <div className="contactBackground"></div>
     						    	<article>
-    						    	<form id='form'>
+    						    	<form id='form' className="contact-form" onSubmit={sendEmail}>
     							    	<h3>Contact me</h3>
     							    	<input type="hidden" name="contact_number" />
     							    	<label htmlFor="nameInput" id="nameLabel">Name:</label><br></br><br></br>
