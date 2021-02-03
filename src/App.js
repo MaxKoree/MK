@@ -32,7 +32,7 @@ class App extends Component {
 	
 	
 	 componentDidMount() {
-	 fetch('http://localhost:3001').then(response => response.json());
+	 fetch('http://localhost:3690').then(response => response.json());
 	  this.updateWindowDimensions();
 	  window.addEventListener('resize', this.updateWindowDimensions);
 	  window.addEventListener('scroll', this.listenToScroll);
@@ -83,6 +83,55 @@ class App extends Component {
 			} else return false
 		}
 
+		arrowButtonShadow() {
+			if (this.state.theposition > 0 && this.state.theposition < 16 && !this.heightAbove600()) {
+				return true
+			} else return false
+		}
+
+		arrowButtonShadow2() {
+			if (this.state.theposition > 0 && this.state.theposition < 16 && !this.widthAbove1420()) {
+				return true
+			} else return false
+		}
+
+		aboutMeButtonShadow() {
+			if (this.state.theposition > 16 && this.state.theposition < 54 && this.heightAbove600() && this.widthAbove1420()) {
+				return true
+			} else return false
+		}
+
+		smallAboutMeButtonShadow() {
+			if (this.state.theposition > 16 && this.state.theposition < 54 && !this.heightAbove600()) {
+				return true
+			} else return false
+		}
+
+		smallAboutMeButtonShadow2() {
+			if (this.state.theposition > 16 && this.state.theposition < 54 && !this.widthAbove1420()) {
+				return true
+			} else return false
+		}
+
+		contactButtonShadow() {
+			if (this.state.theposition > 54 && this.heightAbove600() && this.widthAbove1420()) {
+				return true
+			} else return false
+		}
+
+		smallContactButtonShadow() {
+			if (this.state.theposition > 54 && !this.heightAbove600()) {
+				return true
+			} else return false
+		}
+
+		smallContactButtonShadow2() {
+			if (this.state.theposition > 54 && !this.widthAbove1420()) {
+				return true
+			} else return false
+		}
+		
+
 		executed() {
 			if(this.state.i === 1) {
 				return false
@@ -113,42 +162,42 @@ class App extends Component {
 					titleButton.style.boxShadow = "4px 6px black";
 					aboutMeButton.style.boxShadow = "none";
 					contactButton.style.boxShadow = "none";
-				} else if(this.state.theposition > 0 && this.state.theposition < 16 && !this.heightAbove600() && document.readyState === "complete") {
+				} else if(this.arrowButtonShadow() && document.readyState === "complete") {
 					arrowButton.style.transition = " all 0.3s";
 					arrowButton.style.boxShadow = "4px 6px black";
 					smallaboutMe.style.boxShadow = "none";
 					smallContact.style.boxShadow = "none";
-				} else if(this.state.theposition > 0 && this.state.theposition < 16 && !this.widthAbove1420() && document.readyState === "complete") {
+				} else if(this.arrowButtonShadow2() && document.readyState === "complete") {
 					arrowButton.style.transition = " all 0.3s";
 					arrowButton.style.boxShadow = "4px 6px black";
 					smallaboutMe.style.boxShadow = "none";
 					smallContact.style.boxShadow = "none";
-				} else if(this.state.theposition > 16 && this.state.theposition < 54 && this.heightAbove600() && this.widthAbove1420() && document.readyState === "complete") {
+				} else if(this.aboutMeButtonShadow() && document.readyState === "complete") {
 					aboutMeButton.style.transition = "0.3s";
 					aboutMeButton.style.boxShadow = "4px 6px black";
 					titleButton.style.boxShadow = "none";
 					contactButton.style.boxShadow = "none";
-				} else if(this.state.theposition > 16 && this.state.theposition < 54 && !this.heightAbove600() && document.readyState === "complete") {
+				} else if(this.smallAboutMeButtonShadow() && document.readyState === "complete") {
 					smallaboutMe.style.transition = "0.3s";
 					smallaboutMe.style.boxShadow = "4px 6px black";
 					arrowButton.style.boxShadow = "none";
 					smallContact.style.boxShadow = "none";
-				} else if(this.state.theposition > 16 && this.state.theposition < 54 && !this.widthAbove1420() && document.readyState === "complete") {
+				} else if(this.smallAboutMeButtonShadow2() && document.readyState === "complete") {
 					smallaboutMe.style.transition = "0.3s";
 					smallaboutMe.style.boxShadow = "4px 6px black";
 					arrowButton.style.boxShadow = "none";
 					smallContact.style.boxShadow = "none";
-				} else if(this.state.theposition > 54 && this.heightAbove600() && this.widthAbove1420() && document.readyState === "complete") {
+				} else if(this.contactButtonShadow() && document.readyState === "complete") {
 					contactButton.style.transition = "0.3s";
 					contactButton.style.boxShadow = "4px 6px black";
 					aboutMeButton.style.boxShadow = "none";
 					titleButton.style.boxShadow = "none";
-				} else if(this.state.theposition > 54 && !this.heightAbove600() && document.readyState === "complete") {
+				} else if(this.smallContactButtonShadow() && document.readyState === "complete") {
 					smallContact.style.transition = "0.3s";
 					smallContact.style.boxShadow = "4px 6px black";
 					arrowButton.style.boxShadow = "none";
 					smallaboutMe.style.boxShadow = "none";
-				} else if(this.state.theposition > 54 && !this.widthAbove1420() && document.readyState === "complete") {
+				} else if(this.smallContactButtonShadow2() && document.readyState === "complete") {
 					smallContact.style.transition = "0.3s";
 					smallContact.style.boxShadow = "4px 6px black";
 					arrowButton.style.boxShadow = "none";
@@ -169,8 +218,9 @@ export default App;
 
 /**
  * 
+ *
  * 
- * verander if statements naar functies...
+ *
  * :)
  * 
  * 

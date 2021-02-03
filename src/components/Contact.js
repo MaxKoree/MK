@@ -17,8 +17,7 @@ const sendEmail = (e)  => {
 			document.getElementById("submitButton2").disabled = true;
 			}
 	  }, (error) => {
-		  console.log(error.text);
-		  
+		  alert("Oops, something went wrong :(");
 	  });
 
   }

@@ -126,3 +126,37 @@ render() {
 }
 }
 export default Sidebar;
+
+/**
+  <div>
+    			      	    <ul id="linkList">
+    			    	    <ul>
+    			    	    <button id="arrowButton" onClick={upScroll}>Title</button>
+    			    	    </ul>
+    			    	    <ul>
+    			    	    <button id="aboutmeButton" onClick={aboutMeScroll}><b>About me</b></button>
+    			    	    </ul>
+    			    	    <ul>
+    			    	    <button id="contactButton" onClick={contactScroll}><b>Contact</b></button>
+    			    	    </ul>
+							</ul>
+    			    		<ul id="linkL">
+								<ul>
+    	    	    	    		<a href="https://nl.linkedin.com/in/max-koree-118971194" target="_blank" rel="noreferrer">
+    	    	    	    		<img src={linkedinIcon} alt="linkedIn" id="linkedinIcon" />
+    	    	    	    		</a>
+    	    	    	    	    </ul>
+    	    	    	    	    <ul>
+    	    	    	    		<a href="https://www.upwork.com/freelancers/~01361471f78248a9b3" target="_blank" rel="noreferrer">
+    	    	    	    		<img src={upworkIcon} alt="upWork" id="upworkIcon" />
+    	    	    	    		</a>
+    	    	    	    	    </ul>
+    	    	    	    	    <ul>
+    	    	    	    	    <a href="https://github.com/MaxKoree" target="_blank" rel="noreferrer">
+    	    	    	    	    <img src={githubCat} alt="GitHub" id="githubCat" /> 
+    	    	    	    	    </a>
+    	    	    	    	    </ul>  
+								</ul>
+    			    	    
+							</div>
+ */
