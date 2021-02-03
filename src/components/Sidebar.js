@@ -6,6 +6,7 @@ import githubLogo from './img/GitHub.png';
 import linkedinIcon from './img/linkedin.png';
 import upworkIcon from './img/upwork-icon.png';
 import githubCat from './img/github-icon.png';
+import Tilt from 'react-tilt';
 
 const aboutMeScroll = () => {
 	window.scroll({
@@ -100,7 +101,52 @@ render() {
     	    	    	    	    </ul>  
     	    	    	    	    </ul>
     			      ) : (
-    			      	    <ul id="linkList">
+						<div>
+						<ul id="linkList">
+					  <ul>
+					 <Tilt className="Tilt"  style={{ height: 76, width: 200 }} >
+ 					<div className="Tilt-inner"><button id="arrowButton" onClick={upScroll}>Title</button></div>
+					</Tilt>
+					  </ul>
+					  <ul>
+					  <Tilt className="Tilt" options={{reverse:        true}} style={{ height: 76, width: 200 }} >
+ 					<div className="Tilt-inner"><button id="aboutmeButton" onClick={aboutMeScroll}><b>About me</b></button></div>
+					</Tilt>
+					  </ul>
+					  <ul>
+					  <Tilt className="Tilt" style={{ height: 76, width: 200 }} >
+ 					<div className="Tilt-inner"><button id="contactButton" onClick={contactScroll}><b>Contact</b></button></div>
+					</Tilt>
+					  </ul>
+					  </ul>
+					  <ul id="linkL">
+						  <ul>
+							  <a href="https://nl.linkedin.com/in/max-koree-118971194" target="_blank" rel="noreferrer">
+							  <img src={linkedinIcon} alt="linkedIn" id="linkedinIcon" />
+							  </a>
+							  </ul>
+							  <ul>
+							  <a href="https://www.upwork.com/freelancers/~01361471f78248a9b3" target="_blank" rel="noreferrer">
+							  <img src={upworkIcon} alt="upWork" id="upworkIcon" />
+							  </a>
+							  </ul>
+							  <ul>
+							  <a href="https://github.com/MaxKoree" target="_blank" rel="noreferrer">
+							  <img src={githubCat} alt="GitHub" id="githubCat" /> 
+							  </a>
+							  </ul>  
+						  </ul>
+					  
+					  </div>
+    			  )}
+    	    </div>
+    );
+}
+}
+export default Sidebar;
+
+/**
+		      	    <ul id="linkList">
     			    	    <ul>
     			    	    <button id="arrowButton" onClick={upScroll}>Title</button>
     			    	    </ul>
@@ -119,44 +165,7 @@ render() {
     			    	    <ul>
     			    	     <a href="https://github.com/MaxKoree" target="_blank" rel="noreferrer"><img src={githubLogo} alt="GitHub" id="githubIMG"></img></a>
     			    	    </ul>
-    			    	    </ul>
-    			  )}
-    	    </div>
-    );
-}
-}
-export default Sidebar;
-
-/**
-  <div>
-    			      	    <ul id="linkList">
-    			    	    <ul>
-    			    	    <button id="arrowButton" onClick={upScroll}>Title</button>
-    			    	    </ul>
-    			    	    <ul>
-    			    	    <button id="aboutmeButton" onClick={aboutMeScroll}><b>About me</b></button>
-    			    	    </ul>
-    			    	    <ul>
-    			    	    <button id="contactButton" onClick={contactScroll}><b>Contact</b></button>
-    			    	    </ul>
 							</ul>
-    			    		<ul id="linkL">
-								<ul>
-    	    	    	    		<a href="https://nl.linkedin.com/in/max-koree-118971194" target="_blank" rel="noreferrer">
-    	    	    	    		<img src={linkedinIcon} alt="linkedIn" id="linkedinIcon" />
-    	    	    	    		</a>
-    	    	    	    	    </ul>
-    	    	    	    	    <ul>
-    	    	    	    		<a href="https://www.upwork.com/freelancers/~01361471f78248a9b3" target="_blank" rel="noreferrer">
-    	    	    	    		<img src={upworkIcon} alt="upWork" id="upworkIcon" />
-    	    	    	    		</a>
-    	    	    	    	    </ul>
-    	    	    	    	    <ul>
-    	    	    	    	    <a href="https://github.com/MaxKoree" target="_blank" rel="noreferrer">
-    	    	    	    	    <img src={githubCat} alt="GitHub" id="githubCat" /> 
-    	    	    	    	    </a>
-    	    	    	    	    </ul>  
-								</ul>
-    			    	    
-							</div>
+							
+							
  */

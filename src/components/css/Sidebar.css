@@ -114,6 +114,7 @@ ul {
 	padding: 1rem;
 	border-radius: 6px;
 	width: 200px;
+	margin-left: 3rem;
 }
 
 #aboutmeButton, #contactButton {
@@ -129,6 +130,7 @@ width: 200px;
    border: solid 2px black;
    padding: 1rem;
    border-radius: 6px;
+   margin-left: 3rem;
 }
 
 

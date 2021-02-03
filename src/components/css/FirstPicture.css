@@ -1,11 +1,14 @@
 .firstPictureClass {
 	padding-top:40px;
 	float: left;
-	height: 50rem;
-	width: 70%;
+	height: 43rem;
+	width: 90rem;
 	display: inline-grid;
 	grid-column-gap: 50px;
 	margin-left: 29rem;
+	border: double 10px rgb(3, 104, 25);
+	border-bottom-left-radius: 39px;
+	border-top-left-radius: 39px;
 }
 
 .firstPictureClass2 {
@@ -51,10 +54,11 @@ p {
 	padding: 10px;
 	margin-top: 10px;
 	margin-left: 3rem;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .textBackground {
-	margin-top: -3rem;
+	margin-top: -4rem;
 	margin-left: -9rem;
 	position: absolute;
 	transform: skew(20deg);

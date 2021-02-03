@@ -2,6 +2,7 @@ import React from 'react';
 import './css/FirstPicture.css';
 import FirstPicture from './img/0001.png';
 
+
 class PictureClass extends React.Component {
 	  constructor(props) {
 		    super(props);

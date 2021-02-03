@@ -3,7 +3,7 @@
 	height: 73rem;
     width: 100%;
     text-align: center;
-    float: right;
+	float: right;
 }
 
 
@@ -23,6 +23,11 @@
 	text-align: center;
 	margin: 0;
 	margin-left: 8rem;
+	border: 2px solid black;
+	height: 43rem;
+	width: 30rem;
+	border-radius: 36px;
+	border: double 10px rgb(26, 7, 94);
 }
 
 #myInfo2 {
@@ -101,7 +106,7 @@ article {
 	border-radius: 5px;
 	height: 6rem;
 	width: 500px;
-	max-width: 500px;
+	max-width: 400px;
 	max-height: 130px;
 }
 
@@ -190,19 +195,21 @@ article {
 
 #submitButton {
 	font-size: 20px;
-	float: left;
+	text-align: center;	
 	cursor: pointer;
 	background: none;
 	border: none;
 	height: 40px;
-	width: 500px;
+	width: 369px;
+
 }
 
 #submitButton:hover {
-	transition: 0.4s;
-	border: double 6px rgb(2, 112, 173);
-	border-radius: 6px;
-	box-shadow: 4px 6px black;
+	border: solid 1px rgb(3, 39, 117);
+    transition: 0.9s;
+    border-radius: 6px;
+    box-shadow: 4px 6px #0270ad;
+    color: black;
 }
 
 .contactBackground {
