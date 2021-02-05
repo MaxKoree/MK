@@ -10,7 +10,8 @@ ul {
 	  justify-content: space-evenly;
 	  bottom: 0;
 	  grid-column-gap: 30px;
-	  margin-left: 20px;
+	  margin-left: 38px;
+	  margin-bottom: 9px;
 }
 
 .sideBarClass {
@@ -83,7 +84,7 @@ ul {
 	width: 30px;
 	height: 30px;
 	border: solid 2px black;
-	padding: 1rem;
+	padding: 9px;
 	border-radius: 6px;
 }
 
@@ -138,7 +139,10 @@ button:focus {
     outline-style : none;
 }
 
-
+#contactButton2 {
+	font-size: 9px;
+	text-align: center;
+}
 
 
 

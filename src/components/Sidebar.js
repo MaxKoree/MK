@@ -1,8 +1,8 @@
 import React from 'react';
 import './css/Sidebar.css';
-import linkedinLogo from './img/LI-Logo.png';
-import upworkLogo from './img/upwork.png';
-import githubLogo from './img/GitHub.png';
+// import linkedinLogo from './img/LI-Logo.png';
+// import upworkLogo from './img/upwork.png';
+// import githubLogo from './img/GitHub.png';
 import linkedinIcon from './img/linkedin.png';
 import upworkIcon from './img/upwork-icon.png';
 import githubCat from './img/github-icon.png';
@@ -82,7 +82,7 @@ render() {
     	    	    	    	    <button id="aboutmeButton2" onClick={aboutMeScroll}><b>Me</b></button>
     	    	    	    	    </ul>
     	    	    	    	    <ul>
-    	    	    	    	    <button id="contactButton2" onClick={contactScroll}><b>&#64;</b></button>
+    	    	    	    	    <button id="contactButton2" onClick={contactScroll}><b>Contact</b></button>
     	    	    	    	    </ul>
     	    	    	    		<ul>
     	    	    	    		<a href="https://nl.linkedin.com/in/max-koree-118971194" target="_blank" rel="noreferrer">
@@ -105,17 +105,17 @@ render() {
 						<ul id="linkList">
 					  <ul>
 					 <Tilt className="Tilt"  style={{ height: 76, width: 200 }} >
- 					<div className="Tilt-inner"><button id="arrowButton" onClick={upScroll}>Title</button></div>
+ 					<button className="Tilt-inner" id="arrowButton" onClick={upScroll}><b>Title</b></button>
 					</Tilt>
 					  </ul>
 					  <ul>
 					  <Tilt className="Tilt" options={{reverse:        true}} style={{ height: 76, width: 200 }} >
- 					<div className="Tilt-inner"><button id="aboutmeButton" onClick={aboutMeScroll}><b>About me</b></button></div>
+ 					<button id="aboutmeButton" className="Tilt-inner" onClick={aboutMeScroll}><b>About me</b></button>
 					</Tilt>
 					  </ul>
 					  <ul>
 					  <Tilt className="Tilt" style={{ height: 76, width: 200 }} >
- 					<div className="Tilt-inner"><button id="contactButton" onClick={contactScroll}><b>Contact</b></button></div>
+ 					<button id="contactButton" className="Tilt-inner" onClick={contactScroll}><b>Contact</b></button>
 					</Tilt>
 					  </ul>
 					  </ul>
@@ -167,5 +167,5 @@ export default Sidebar;
     			    	    </ul>
 							</ul>
 							
-							
+
  */
