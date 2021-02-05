@@ -21,13 +21,13 @@ ul {
 #linkList {
 	display: inline-grid;
 	position: fixed;
-	background: linear-gradient(to right, green 1%,lightgreen 50%, white 100%);
+	background: linear-gradient(to right, rgb(241, 134, 134) 1%,rgb(238, 144, 144) 30%, white 100%);
 	border-right: double 10px black;
 	margin: 0px;
 	padding: 0px;
 	height: 100%;
 	text-align: center;
-	width: 19rem;
+	width: 19%;
 	padding-top: 2rem;
 	z-index: 0;
 }
@@ -35,7 +35,7 @@ ul {
 #smallLinkList {
 	display: inline-grid;
 	position: fixed;
-	background: linear-gradient(to right, green 1%,lightgreen 50%, white 100%);
+	background: linear-gradient(to right, rgb(241, 134, 134) 1%,rgb(238, 144, 144) 50%, white 100%);
 	border-right: double 10px black;
 	margin: 0px;
 	padding: 0px;

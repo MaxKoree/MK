@@ -85,8 +85,9 @@ class App extends Component {
 			<Sidebar />
 			<HireMe />	
 			<FirstPicture />
-			<Contact />
 			<Footer />
+			<Contact />
+			
 			{(() => {
 				if(titleButton != null && this.state.theposition < 16) {
 					titleButton.style.transition = "0.3s";
@@ -138,7 +139,11 @@ export default App;
  * 
  *
  * :)
- * 
+ * contact header in het midden
+ * contact form in het midden
+ * footer content in het midden
+ * full stack developer title iets meer naar rechts
+ * small navbar moet weg en dan wanneer je scrolt zie je die die active is
  * 
  * 
  * 

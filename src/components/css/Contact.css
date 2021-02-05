@@ -1,41 +1,37 @@
 .contactClass {
-	margin-left: 13rem;
-	height: 73rem;
+	
+	height: 60rem;
     width: 100%;
     text-align: center;
-	float: right;
 }
 
 
 #contactMeHeader {
-	margin-top: 9rem;
+	margin-top: 6rem;
 	font-size: 90px;
 	font-family: 'JmonoSpaceThin', monospace;
+	width: 80%;
+	text-align: center;
+	
+	float: right;
 }
 
 
 .smallContact {
 	text-align: center;
-	margin-left: 60rem;
+
 }
 
 #form {
 	text-align: center;
 	margin: 0;
-	margin-left: 8rem;
-	border: 2px solid black;
-	height: 43rem;
+	margin-left: -9em;
+	width: 80%;
+	text-align: center;
+	height: 33rem;
 	width: 30rem;
-	border-radius: 36px;
+	
 	border: double 10px rgb(26, 7, 94);
-}
-
-#myInfo2 {
-	z-index: -2;
-	margin: 0;
-	margin-top: 15rem;
-	text-align: center;	
-	padding-left: 6rem;
 }
 
 #contactMeClass {
@@ -49,12 +45,6 @@
 h6 {
 	font-size: 60px;
 	margin: 30px;
-}
-
-.myInfo {
-	text-align: center;
-	float: right;
-	font-family: 'JetBrains Mono', monospace;
 }
 
 h3 {
@@ -80,6 +70,7 @@ article {
 }
 
 #nameInput, #emailInput {
+	float: right;
 	height: 30px;
 	font-size: 20px;
 	border: none;
@@ -95,6 +86,7 @@ article {
 	float: left;
 	margin-left: 50px;
 	font-size: 20px;
+	margin-top: 4rem;
 }
 
 #questionInput {
@@ -108,6 +100,14 @@ article {
 	width: 500px;
 	max-width: 400px;
 	max-height: 130px;
+}
+
+#smallForm {
+	border: double 10px rgb(26, 7, 94);
+	margin-left: 6rem;
+	width: 23rem;
+	float:right;
+	text-align: center;
 }
 
 #nameInput2 {
@@ -126,21 +126,25 @@ article {
 	background: none;
 	border: solid  rgb(2, 112, 173) 3px;
 	border-radius: 9px;
-	margin-left: 3rem;
+	
+ }
+
+ #formHeader {
+	 margin-right: 1rem;
  }
 
 #nameLabel2 {
-	margin-left: -9rem;
+	
 	font-size: 20px;
 }
 
 #emailLabel2 {
-	margin-left: -6rem;
+	
 	font-size: 20px;
 }
 
 #questionInput2 {
-	margin-left: 9rem;
+	
 	font-size: 15px;
 	border: none; 
 	background: none;
@@ -159,7 +163,7 @@ article {
 #submitButton2 {
 	font-size: 20px;
 	cursor: pointer;
-	margin-left: 9rem;;
+	
 	background: none;
 	border: none;
 	height: 40px;
@@ -171,21 +175,21 @@ article {
     transition: 0.9s;
     border-radius: 6px;
     box-shadow: 4px 6px #0270ad;
-    color: black;
 }
 
 
 .contactBackground {
-	margin-top: 2rem;
+	margin-top: -13rem;
 	margin-left: -6rem;
 	-webkit-transform: scaleX(-1);
   	transform: scaleX(-1) skew(10deg);
 	position: absolute;
-	background-color: lightblue;
-	height: 39rem;
-	width: 43rem;
+	background: linear-gradient(to left, #eaf0f6  1%,rgb(200, 242, 255) 20%, #51fcc0 100%);
+	height: 60rem;
+	width: 47rem;
 	border-radius: 30px;
 	z-index: -5;
+	opacity: 0.6;
 }
 
 #questionLabel {
@@ -210,7 +214,6 @@ article {
     transition: 0.9s;
     border-radius: 6px;
     box-shadow: 4px 6px #0270ad;
-    color: black;
 }
 
 .contactBackground {
@@ -219,13 +222,13 @@ article {
 
 
 #inputBackground {
-	margin-top: -3rem;
-	margin-left: 3rem;
+	margin-top: -13rem;
+	margin-left: 6rem;
 	-webkit-transform: scaleX(-1);
   	transform: skew(10deg);
 	position: absolute;
-	background-color: lightgreen;
-	height: 45rem;
+	background: linear-gradient(to right, #eaf0f6  1%,rgb(200, 242, 255) 20%, #51fcc0 100%);
+	height: 60rem;
 	width: 30rem;
 	border-radius: 30px;
 	z-index: -2;

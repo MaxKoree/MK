@@ -74,7 +74,6 @@ render() {
     		<div className="sideBarClass">
     	    {tooSmall || tooSmall2 ? (
     	    			    	    <ul id="smallLinkList">
-    	    			    	    <script>alert("1")</script>
     	    	    	    	    <ul>
     	    	    	    	    <button id="arrowButton2" onClick={upScroll}>&#8593;</button>
     	    	    	    	    </ul>
@@ -109,7 +108,7 @@ render() {
 					</Tilt>
 					  </ul>
 					  <ul>
-					  <Tilt className="Tilt" options={{reverse:        true}} style={{ height: 76, width: 200 }} >
+					  <Tilt className="Tilt" style={{ height: 76, width: 200 }} >
  					<button id="aboutmeButton" className="Tilt-inner" onClick={aboutMeScroll}><b>About me</b></button>
 					</Tilt>
 					  </ul>
@@ -121,8 +120,8 @@ render() {
 					  </ul>
 					  <ul id="linkL">
 						  <ul>
-							  <a href="https://nl.linkedin.com/in/max-koree-118971194" target="_blank" rel="noreferrer">
-							  <img src={linkedinIcon} alt="linkedIn" id="linkedinIcon" />
+						  <a href="https://github.com/MaxKoree" target="_blank" rel="noreferrer">
+							  <img src={githubCat} alt="GitHub" id="githubCat" /> 
 							  </a>
 							  </ul>
 							  <ul>
@@ -131,8 +130,8 @@ render() {
 							  </a>
 							  </ul>
 							  <ul>
-							  <a href="https://github.com/MaxKoree" target="_blank" rel="noreferrer">
-							  <img src={githubCat} alt="GitHub" id="githubCat" /> 
+							  <a href="https://nl.linkedin.com/in/max-koree-118971194" target="_blank" rel="noreferrer">
+							  <img src={linkedinIcon} alt="linkedIn" id="linkedinIcon" />
 							  </a>
 							  </ul>  
 						  </ul>
