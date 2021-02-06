@@ -1,7 +1,7 @@
 .firstPictureClass {
 	padding-top:40px;
 	float: right;
-	height: 46rem;
+	height: 53rem;
 	width: 80%;
 	display: inline-grid;
 	grid-column-gap: 50px;
@@ -13,7 +13,7 @@
 	padding-left: 6rem;
 	padding-top: 13rem;
 	float: right;
-	height: 46rem;
+	height: 53rem;
 	width: 80%;
 	display: inline-grid;
 	grid-column-gap: 50px;
@@ -27,6 +27,7 @@
 	margin-top: 10px;
 	margin-left: 6rem;
 	width: 9rem;
+	height: 1rem;
 }
 
 #firstPicture {
@@ -44,14 +45,14 @@
 }
 
 p {
-	font-size: 20px;
+	font-size: 19px;
 	height: 36rem;
 	width: 29rem;
 	margin: 0;
 	padding: 10px;
 	margin-top: 10px;
 	margin-left: 3rem;
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Sriracha', cursive;
 }
 
 .textBackground {
