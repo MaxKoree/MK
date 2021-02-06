@@ -68,6 +68,24 @@ class App extends Component {
 				return false
 			} else return true
 		}
+
+		checkTitleHeight() {
+			if(this.state.theposition < 16) {
+				return true;
+			} else return false;
+		}
+
+		checkAboutMeHeight() {
+			if(this.state.theposition > 16 && this.state.theposition < 54) {
+				return true;
+			} else return false;
+		}
+
+		checkContactHeight() {
+			if(this.state.theposition > 54) {
+				return true;
+			} else return false;
+		}
 	
 
 	render() {
@@ -89,32 +107,32 @@ class App extends Component {
 			<Contact />
 			
 			{(() => {
-				if(titleButton != null && this.state.theposition < 16) {
+				if(titleButton != null && this.checkTitleHeight()) {
 					titleButton.style.transition = "0.3s";
 					titleButton.style.boxShadow = "4px 6px black";
 					aboutMeButton.style.boxShadow = "none";
 					contactButton.style.boxShadow = "none";
-				} else if(arrowButton != null && this.state.theposition < 16) {
+				} else if(arrowButton != null && this.checkTitleHeight()) {
 					arrowButton.style.transition = " all 0.3s";
 					arrowButton.style.boxShadow = "4px 6px black";
 					smallaboutMe.style.boxShadow = "none";
 					smallContact.style.boxShadow = "none";
-				} else if(aboutMeButton != null && this.state.theposition > 16 && this.state.theposition < 54) {
+				} else if(aboutMeButton != null && this.checkAboutMeHeight()) {
 					aboutMeButton.style.transition = "0.3s";
 					aboutMeButton.style.boxShadow = "4px 6px black";
 					titleButton.style.boxShadow = "none";
 					contactButton.style.boxShadow = "none";
-				} else if(smallaboutMe != null && this.state.theposition > 16 && this.state.theposition < 54) {
+				} else if(smallaboutMe != null && this.checkAboutMeHeight()) {
 					smallaboutMe.style.transition = "0.3s";
 					smallaboutMe.style.boxShadow = "4px 6px black";
 					arrowButton.style.boxShadow = "none";
 					smallContact.style.boxShadow = "none";
-				} else if(contactButton != null && this.state.theposition > 54) {
+				} else if(contactButton != null && this.checkContactHeight()) {
 					contactButton.style.transition = "0.3s";
 					contactButton.style.boxShadow = "4px 6px black";
 					aboutMeButton.style.boxShadow = "none";
 					titleButton.style.boxShadow = "none";
-				} else if(smallContact != null && this.state.theposition > 54) {
+				} else if(smallContact != null && this.checkContactHeight()) {
 					smallContact.style.transition = "0.3s";
 					smallContact.style.boxShadow = "4px 6px black";
 					arrowButton.style.boxShadow = "none";
@@ -137,13 +155,8 @@ export default App;
  * 
  *
  * 
- *
+ * small contact form not responsive yet
  * :)
- * contact header in het midden
- * contact form in het midden
- * footer content in het midden
- * full stack developer title iets meer naar rechts
- * small navbar moet weg en dan wanneer je scrolt zie je die die active is
  * 
  * 
  * 

@@ -83,7 +83,7 @@ class Contact extends React.Component {
 
 		    		  <div id="smallContact">
 					    <div className="contactMeClass" id="contactMeClass">
-					    	<article id="article">
+					    	<article id="smallArticle">
 					    	<form  id="smallForm" onSubmit={sendEmail}>
 	     	    	    	<div id="inputBackground"></div>  
 						    	<h3 id="formHeader">Contact me</h3>
@@ -102,12 +102,11 @@ class Contact extends React.Component {
 					    </div>
     			      ) : (
     			    		  <div className="bigContact">	
-    	    		  <h1 id="contactMeHeader">Contact</h1>
     						    <div className="contactMeClass">
     						    <div className="contactBackground"></div>
     						    	<article>
     						    	<form id='form' className="contact-form" onSubmit={sendEmail}>
-    							    	
+    							    	<h3>Contact Me</h3>
     							    	<input type="hidden" name="contact_number" />
     							    	<label htmlFor="nameInput" id="nameLabel">Name:</label><br></br><br></br>
     							    	<input id="nameInput" type="text"  name="user_name" onChange={this.onNameChange} required></input> <br></br><br></br><br></br><br></br>

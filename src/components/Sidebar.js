@@ -10,14 +10,14 @@ import Tilt from 'react-tilt';
 
 const aboutMeScroll = () => {
 	window.scroll({
-		  top: 710,
+		  top: 990,
 		  behavior: 'smooth'
 		});
 }
 
 const contactScroll = () => {
 	window.scroll({
-		  top: 1690,
+		  top: 2430,
 		  behavior: 'smooth'
 		});
 }

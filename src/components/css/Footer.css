@@ -1,6 +1,6 @@
 .footerClass {
 	margin-top: 3rem;
-	background: linear-gradient(to left, rgb(252, 141, 141) 1%,rgb(238, 144, 144) 20%, white 80%);
+	background: linear-gradient(to bottom, rgb(252, 141, 141) 1%,rgb(238, 144, 144) 20%, white 80%);
 	border-bottom: double 10px rgb(128, 0, 0);
 	border-top: solid 10px rgb(80, 0, 0);
 	height: 30rem;
