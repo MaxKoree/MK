@@ -1,5 +1,4 @@
 import React from 'react';
-import './css/Sidebar.css';
 import linkedinIcon from './img/linkedin.png';
 import upworkIcon from './img/upwork-icon.png';
 import githubCat from './img/github-icon.png';

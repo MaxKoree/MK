@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+        "label": "Sass Compile",
+        "type": "shell",
+        "options": {
+            "cwd": "${workspaceFolder}/public/Styles"
+        },
+        "command": "sass Styles.scss Styles.css",
+        "group": "build"
+        },
+        {
+        "label": "server",
+        "type": "shell",
+        "command": "npm start",
+        "options": {
+            "cwd": "${workspaceFolder}"
+        },
+        "group": "build"
+        }
+    ]
+}

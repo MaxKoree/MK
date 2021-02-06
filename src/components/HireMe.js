@@ -1,5 +1,4 @@
 import React from 'react';
-import './css/HireMe.css';
 
 const hireMe = () => {
 	window.scroll({

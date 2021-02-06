@@ -1,0 +1,565 @@
+.firstPictureClass {
+  padding-top: 40px;
+  float: right;
+  height: 53rem;
+  width: 80%;
+  display: inline-grid;
+  grid-column-gap: 50px;
+  margin-left: 23%;
+  border: double 10px #680303;
+}
+
+.firstPictureClass2 {
+  padding-left: 6rem;
+  padding-top: 13rem;
+  float: right;
+  height: 53rem;
+  width: 80%;
+  display: inline-grid;
+  grid-column-gap: 50px;
+}
+
+.aboutmeHeader {
+  margin-top: 30px;
+  font-size: 30px;
+  font-family: "JetBrains Mono", monospace;
+  z-index: 1;
+  margin-top: 10px;
+  margin-left: 6rem;
+  width: 9rem;
+  height: 1rem;
+}
+
+#firstPicture {
+  border-radius: 9px;
+  height: 500px;
+  width: 350px;
+  float: right;
+  margin-left: 40rem;
+  position: absolute;
+}
+
+#p {
+  width: 20rem;
+  font-size: 19px;
+}
+
+p {
+  font-size: 19px;
+  height: 36rem;
+  width: 29rem;
+  margin: 0;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 3rem;
+  font-family: "Sriracha", cursive;
+}
+
+.textBackground {
+  margin-top: -4rem;
+  margin-left: -18rem;
+  position: absolute;
+  transform: skew(20deg);
+  background: linear-gradient(to top, #da0303 1%, #ee9090 50%, #eaf0f6 100%);
+  height: 69rem;
+  width: 80%;
+  border-radius: 30px;
+  z-index: -2;
+  opacity: 0.6;
+}
+
+#firstPicture2 {
+  border-radius: 9px;
+  height: 300px;
+  width: 211px;
+  float: left;
+  margin-left: 29rem;
+  margin-top: 6rem;
+  position: absolute;
+}
+
+.footerClass {
+  margin-top: 3rem;
+  background: linear-gradient(to bottom, #fc8d8d 1%, #ee9090 20%, white 80%);
+  border-bottom: double 10px maroon;
+  border-top: solid 10px #500000;
+  height: 30rem;
+  width: 100%;
+  text-align: center;
+  float: right;
+  margin-left: 3rem;
+}
+
+#footerTitle {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-size: 50px;
+  width: 80%;
+  margin-left: 3rem;
+  position: relative;
+  text-align: center;
+  float: right;
+}
+
+.footerGrid {
+  display: inline-grid;
+  padding: 0px;
+  text-align: center;
+  padding-top: 3rem;
+  margin-left: 3rem;
+  z-index: 0;
+  grid-template-columns: auto auto;
+  grid-column-gap: 1rem;
+  transition: 0.9s;
+  width: 70%;
+  position: relative;
+  float: right;
+}
+
+span {
+  height: 4rem;
+  width: 19rem;
+  border: double 2px black;
+  border-radius: 6px;
+  font-size: 23px;
+  text-align: center;
+  padding: 9px;
+}
+
+span:hover {
+  transition: 0.5s;
+  color: red;
+}
+
+.contactClass {
+  height: 60rem;
+  width: 100%;
+  text-align: center;
+}
+
+#contactMeHeader {
+  margin-top: 6rem;
+  font-size: 90px;
+  font-family: "JmonoSpaceThin", monospace;
+  width: 80%;
+  text-align: center;
+  float: right;
+}
+
+.smallContact {
+  text-align: center;
+}
+
+#form {
+  text-align: center;
+  margin: 0;
+  margin-left: -9em;
+  margin-top: 6em;
+  width: 80%;
+  text-align: center;
+  height: 42rem;
+  width: 30rem;
+  border: double 10px #1a075e;
+}
+
+#contactMeClass {
+  z-index: -2;
+  margin: 0;
+  margin-top: 12rem;
+  text-align: center;
+  padding-left: 13rem;
+}
+
+h6 {
+  font-size: 60px;
+  margin: 30px;
+}
+
+h3 {
+  font-size: 50px;
+}
+
+input, textarea {
+  font-family: "JetBrains Mono", monospace;
+}
+
+.contactMeClass {
+  float: right;
+  height: 560px;
+  margin-right: 100px;
+  text-align: center;
+  font-family: "JetBrains Mono", monospace;
+}
+
+article {
+  width: 600px;
+  height: 500px;
+}
+
+#nameInput, #emailInput {
+  float: right;
+  height: 30px;
+  font-size: 20px;
+  border: none;
+  background: none;
+  border: solid #0270ad 3px;
+  float: left;
+  margin-left: 90px;
+  margin: 20px 0px 0px 90px;
+  border-radius: 9px;
+}
+
+#nameLabel, #emailLabel {
+  float: left;
+  margin-left: 50px;
+  font-size: 20px;
+  margin-top: 4rem;
+}
+
+#questionInput {
+  font-size: 15px;
+  border: none;
+  background: none;
+  padding: 5px;
+  border: double 5px #0270ad;
+  border-radius: 5px;
+  height: 6rem;
+  width: 500px;
+  max-width: 400px;
+  max-height: 130px;
+}
+
+#smallForm {
+  border: double 10px #1a075e;
+  width: 17rem;
+  text-align: center;
+  float: right;
+  margin-right: 6rem;
+}
+
+#nameInput2 {
+  height: 30px;
+  font-size: 20px;
+  border: none;
+  background: none;
+  border: solid #0270ad 3px;
+  border-radius: 9px;
+}
+
+#emailInput2 {
+  height: 30px;
+  font-size: 20px;
+  border: none;
+  background: none;
+  border: solid #0270ad 3px;
+  border-radius: 9px;
+}
+
+#formHeader {
+  margin-right: 1rem;
+  font-size: 30px;
+}
+
+#nameLabel2 {
+  font-size: 20px;
+}
+
+#emailLabel2 {
+  font-size: 20px;
+}
+
+#questionInput2 {
+  font-size: 15px;
+  border: none;
+  background: none;
+  border: double 5px #0270ad;
+  border-radius: 5px;
+  height: 6rem;
+  width: 15rem;
+  max-width: 230px;
+  max-height: 130px;
+}
+
+#questionLabel2 {
+  font-size: 20px;
+}
+
+#submitButton2 {
+  font-size: 20px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  height: 40px;
+  width: 230px;
+}
+
+#submitButton2:hover {
+  border: solid 1px #09a04d;
+  transition: 0.9s;
+  border-radius: 6px;
+  box-shadow: 4px 6px #0270ad;
+}
+
+.contactBackground {
+  margin-top: -13rem;
+  margin-left: -6rem;
+  position: absolute;
+  background: linear-gradient(to right, #eaf0f6 1%, #c8f2ff 20%, #51fcc0 100%);
+  height: 69rem;
+  width: 40.7rem;
+  border-radius: 30px;
+  z-index: -5;
+  opacity: 0.6;
+}
+
+#questionLabel {
+  font-size: 23px;
+  float: left;
+  margin-left: 50px;
+  margin-top: 13px;
+}
+
+#submitButton {
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  background: none;
+  border: none;
+  height: 40px;
+  width: 369px;
+}
+
+#submitButton:hover {
+  border: solid 1px #032775;
+  transition: 0.9s;
+  border-radius: 6px;
+  box-shadow: 4px 6px #0270ad;
+}
+
+.contactBackground {
+  margin-left: 3rem;
+}
+
+#inputBackground {
+  margin-top: -13rem;
+  margin-left: 6rem;
+  position: absolute;
+  background: linear-gradient(to right, #eaf0f6 1%, #c8f2ff 20%, #51fcc0 100%);
+  height: 60rem;
+  width: 17.5rem;
+  border-radius: 30px;
+  z-index: -2;
+  opacity: 0.5;
+}
+
+#title {
+  text-align: center;
+  margin-left: 9rem;
+  margin-top: 8rem;
+  width: 100%;
+  font-size: 60px;
+  transform: skew(10deg);
+}
+
+h6 {
+  font-size: 49px;
+}
+
+.hireMeClass {
+  height: 60rem;
+  width: 81%;
+  z-index: 2;
+  position: relative;
+  float: right;
+}
+
+#hireMeButton {
+  width: 30rem;
+  height: 30rem;
+  font-size: 160px;
+  cursor: pointer;
+  font-family: "JetBrains Mono", monospace;
+  z-index: 2;
+  position: relative;
+  margin-left: 3rem;
+}
+
+#hireMeButton:hover {
+  transition: 1s;
+  color: #ff6767;
+}
+
+h1 {
+  z-index: -2;
+  margin: 0px;
+}
+
+h2 {
+  margin: 0;
+  float: left;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 90px;
+  margin-left: 3rem;
+}
+
+#bigTitle {
+  text-align: center;
+  margin-top: 11rem;
+  margin-bottom: 3rem;
+  width: 80%;
+  font-size: 60px;
+  transform: skew(10deg);
+  float: left;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+#linkL {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  position: fixed;
+  justify-content: space-evenly;
+  bottom: 0;
+  grid-column-gap: 30px;
+  margin-left: 38px;
+  margin-bottom: 9px;
+}
+
+.sideBarClass {
+  height: 60px;
+}
+
+#linkList {
+  display: inline-grid;
+  position: fixed;
+  background: linear-gradient(to right, #f18686 1%, #ee9090 30%, white 100%);
+  border-right: double 10px black;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  text-align: center;
+  width: 19%;
+  padding-top: 2rem;
+  z-index: 0;
+}
+
+#smallLinkList {
+  display: inline-grid;
+  position: fixed;
+  background: linear-gradient(to right, #f18686 1%, #ee9090 50%, white 100%);
+  border-right: double 10px black;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  text-align: center;
+  width: 5rem;
+  padding-top: 1rem;
+  z-index: 0;
+  grid-template-columns: auto;
+  grid-row-gap: 5px;
+  transition: 0.9s;
+}
+
+#upworkIMG {
+  width: 200px;
+  height: 50px;
+  border: solid 2px black;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+#linkedinIMG {
+  width: 200px;
+  height: 50px;
+  border: solid 2px black;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+#aboutmeButton2, #contactButton2, #arrowButton2 {
+  width: 66px;
+  height: 66px;
+  padding: 1rem;
+  font-size: 20px;
+  font-family: "JetBrains Mono", monospace;
+  background: none;
+  cursor: pointer;
+  text-align: center;
+  border: solid 2px black;
+  border-radius: 6px;
+}
+
+#linkedinIcon, #upworkIcon, #githubCat {
+  width: 30px;
+  height: 30px;
+  border: solid 2px black;
+  padding: 9px;
+  border-radius: 6px;
+}
+
+#githubIMG {
+  width: 200px;
+  height: 70px;
+  border: solid 2px black;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+#linkedinIMG:hover, #upworkIMG:hover, #githubIMG:hover, #arrowButton:hover, #aboutmeButton:hover, #contactButton:hover,
+#linkedinIcon:hover, #upworkIcon:hover, #githubCat:hover, #aboutmeButton2:hover, #contactButton2:hover, #arrowButton2:hover {
+  border: solid 2px black;
+  transition: 0.9s;
+  border-radius: 6px;
+  box-shadow: 4px 6px black;
+  color: black;
+}
+
+#arrowButton {
+  cursor: pointer;
+  background: none;
+  font-size: 35px;
+  color: #353535;
+  font-family: "JetBrains Mono", monospace;
+  border: solid 2px black;
+  padding: 1rem;
+  border-radius: 6px;
+  width: 200px;
+  margin-left: 3rem;
+}
+
+#aboutmeButton, #contactButton {
+  width: 200px;
+  padding: 1rem;
+  font-size: 35px;
+  font-family: "JetBrains Mono", monospace;
+  width: 200px;
+  color: #353535;
+  background: none;
+  cursor: pointer;
+  text-align: center;
+  border: solid 2px black;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-left: 3rem;
+}
+
+button:focus {
+  outline-style: none;
+}
+
+#contactButton2 {
+  font-size: 9px;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #eaf0f6;
+  overflow-x: hidden;
+}
+
+/*# sourceMappingURL=Styles.css.map */
