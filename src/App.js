@@ -100,7 +100,9 @@ class App extends Component {
 				<Particles className='particles' 
 				params={particlesOptions}
                 />
+ 
 			<Sidebar />
+		
 			<HireMe />	
 			<FirstPicture />
 			<Footer />

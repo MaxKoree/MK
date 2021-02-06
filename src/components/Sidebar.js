@@ -1,8 +1,5 @@
 import React from 'react';
 import './css/Sidebar.css';
-// import linkedinLogo from './img/LI-Logo.png';
-// import upworkLogo from './img/upwork.png';
-// import githubLogo from './img/GitHub.png';
 import linkedinIcon from './img/linkedin.png';
 import upworkIcon from './img/upwork-icon.png';
 import githubCat from './img/github-icon.png';
@@ -35,7 +32,7 @@ class Sidebar extends React.Component {
 		    this.state = {
 		      height: '',
 		      width: '',
-		      tooSmall: false,
+		      tooSmall: false
 		    }
 		    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
 		  }
@@ -103,18 +100,18 @@ render() {
 						<div>
 						<ul id="linkList">
 					  <ul>
-					 <Tilt className="Tilt"  style={{ height: 76, width: 200 }} >
- 					<button className="Tilt-inner" id="arrowButton" onClick={upScroll}><b>Title</b></button>
+					 <Tilt style={{ height: 76, width: 200 }} >
+ 					<button id="arrowButton" onClick={upScroll}><b>Title</b></button>
 					</Tilt>
 					  </ul>
 					  <ul>
-					  <Tilt className="Tilt" style={{ height: 76, width: 200 }} >
- 					<button id="aboutmeButton" className="Tilt-inner" onClick={aboutMeScroll}><b>About me</b></button>
+					  <Tilt style={{ height: 76, width: 200 }} >
+ 					<button id="aboutmeButton" onClick={aboutMeScroll}><b>About me</b></button>
 					</Tilt>
 					  </ul>
 					  <ul>
-					  <Tilt className="Tilt" style={{ height: 76, width: 200 }} >
- 					<button id="contactButton" className="Tilt-inner" onClick={contactScroll}><b>Contact</b></button>
+					  <Tilt style={{ height: 76, width: 200 }} >
+ 					<button id="contactButton" className="" onClick={contactScroll}><b>Contact</b></button>
 					</Tilt>
 					  </ul>
 					  </ul>
@@ -144,27 +141,3 @@ render() {
 }
 export default Sidebar;
 
-/**
-		      	    <ul id="linkList">
-    			    	    <ul>
-    			    	    <button id="arrowButton" onClick={upScroll}>Title</button>
-    			    	    </ul>
-    			    	    <ul>
-    			    	    <button id="aboutmeButton" onClick={aboutMeScroll}><b>About me</b></button>
-    			    	    </ul>
-    			    	    <ul>
-    			    	    <button id="contactButton" onClick={contactScroll}><b>Contact</b></button>
-    			    	    </ul>
-    			    		<ul>
-    			    		<a href="https://nl.linkedin.com/in/max-koree-118971194" target="_blank" rel="noreferrer"><img src={linkedinLogo} alt="linkedIn" id="linkedinIMG"></img></a>
-    			    	    </ul>
-    			    	    <ul>
-    			    		<a href="https://www.upwork.com/freelancers/~01361471f78248a9b3" target="_blank" rel="noreferrer"><img src={upworkLogo} alt="upWork" id="upworkIMG"></img></a>
-    			    	    </ul>
-    			    	    <ul>
-    			    	     <a href="https://github.com/MaxKoree" target="_blank" rel="noreferrer"><img src={githubLogo} alt="GitHub" id="githubIMG"></img></a>
-    			    	    </ul>
-							</ul>
-							
-
- */
