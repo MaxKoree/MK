@@ -155,7 +155,7 @@ export default App;
  * 
  *
  * 
- * small contact form not responsive yet
+ * Check if email is valid door te checken if er een punt in zit bijvoorbeeld
  * :)
  * 
  * 
