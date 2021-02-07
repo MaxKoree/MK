@@ -14,7 +14,7 @@ const aboutMeScroll = () => {
 
 const contactScroll = () => {
 	window.scroll({
-		  top: 2430,
+		  top: 2560,
 		  behavior: 'smooth'
 		});
 }
@@ -28,7 +28,8 @@ const upScroll = () => {
 
 class Sidebar extends React.Component {
 	  constructor(props) {
-		    super(props);
+			super(props);
+			this.wrapper = React.createRef();
 		    this.state = {
 		      height: '',
 		      width: '',
@@ -100,18 +101,18 @@ render() {
 						<div>
 						<ul id="linkList">
 					  <ul>
-					 <Tilt style={{ height: 76, width: 200 }} >
- 					<button id="arrowButton" onClick={upScroll}><b>Title</b></button>
+					 <Tilt style={{ height: 76, width: 200 }} ref={this.wrapper}>
+ 					<button id="arrowButton" ref={this.wrapper} onClick={upScroll}><b>Title{this.props.children}</b></button>
+					</Tilt>
+					  </ul>
+					  <ul>
+					  <Tilt style={{ height: 76, width: 200 }} ref={this.wrapper}>
+ 					<button id="aboutmeButton" ref={this.wrapper} onClick={aboutMeScroll}><b>About me{this.props.children}</b></button>
 					</Tilt>
 					  </ul>
 					  <ul>
 					  <Tilt style={{ height: 76, width: 200 }} >
- 					<button id="aboutmeButton" onClick={aboutMeScroll}><b>About me</b></button>
-					</Tilt>
-					  </ul>
-					  <ul>
-					  <Tilt style={{ height: 76, width: 200 }} >
- 					<button id="contactButton" className="" onClick={contactScroll}><b>Contact</b></button>
+ 					<button id="contactButton" ref={this.wrapper} onClick={contactScroll} ><b>Contact{this.props.children}</b></button>
 					</Tilt>
 					  </ul>
 					  </ul>

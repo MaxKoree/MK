@@ -3,7 +3,7 @@ import './css/HireMe.css';
 
 const hireMe = () => {
 	window.scroll({
-		  top: 2430,
+		  top: 2560,
 		  behavior: 'smooth'
 		});
 }

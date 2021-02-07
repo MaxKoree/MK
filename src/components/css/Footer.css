@@ -49,5 +49,10 @@ span {
 
 span:hover {
 	transition: 0.5s;
-	color: rgb(255, 0, 0);
+	color: rgb(86, 168, 104);
+	cursor: -webkit-grab; cursor: grab;
+}
+
+span:active {
+	cursor: -webkit-grabbing; cursor: grabbing;
 }

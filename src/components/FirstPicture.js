@@ -84,7 +84,7 @@ render() {
     	     		    	- React<br></br>
     	     		    	- Node.js<br></br>
     	     		    	- Java<br></br><br></br>
-    	     		    	Feel free to contact me if there is anything you&#39;d like to ask.</p> 
+    	     		    	Feel free to contact me.</p> 
     	    	    	</div>
     	    	    	)}  	    	
 
