@@ -2,7 +2,6 @@ import React from 'react';
 import Tilt from 'react-tilt';
 import './css/Footer.css';
 
-
 function Footer() {
   return (
     <div className="footerClass" id="footerID">

@@ -8,7 +8,6 @@ const hireMe = () => {
 		});
 }
 
-
 function HireMe() {
   return (
     <div className="hireMeClass">

@@ -2,7 +2,6 @@ import React from 'react';
 import './css/FirstPicture.css';
 import FirstPicture from './img/0001.png';
 
-
 class PictureClass extends React.Component {
 	  constructor(props) {
 		    super(props);
@@ -13,8 +12,7 @@ class PictureClass extends React.Component {
 		    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
 		  }
 	  
-	  
-	  componentDidMount() {
+	  		componentDidMount() {
 			  this.updateWindowDimensions();
 			  window.addEventListener('resize', this.updateWindowDimensions);
 			 }
@@ -38,7 +36,6 @@ render() {
 	const tooSmall = this.checkWidth();
   return (
     <div >
-    	    	
     	    	{tooSmall ? (
     	    			  <div className="firstPictureClass2">
     	    	    	    	
@@ -68,8 +65,8 @@ render() {
     	     	    	<h1 className="aboutmeHeader">About me</h1>
     	     	    	<img src={FirstPicture} alt="Me :)" id="firstPicture"></img>
     	     	    	<div className="textBackground"></div>
-    	     		    	<p>Hey, i&#39;m Max Koree. 18 years old. I live in Amsterdam. I&#39;m a full stack developer.
-    	     		    	I started studying computer science when I was 15 years old. I&#39;m a student at the MBO college Zuid-Oost in Amsterdam.
+    	     		    	<p>Hey, i&#39;m Max Koree, 18 years old, live in Amsterdam. I&#39;m a full stack developer.
+    	     		    	I started studying computer science when I was 15 years old.
     	     		    	I&#39;ve learned a lot since, I had an intership at ABN AMRO Bank N.V., IT department (Head office).
     	     		    	Here I started really getting into programming.
     	     		    	After the internship I followed the  

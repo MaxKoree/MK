@@ -20,10 +20,8 @@ const particlesOptions = {
 class App extends Component {
 	constructor(props) {
 		super(props);
-		
 		this.state = {
-				theposition: 0,
-				i: 1
+				theposition: 0
 		}
 		window.scrollTo(0, 0);
 		this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
@@ -80,7 +78,6 @@ class App extends Component {
 				return true;
 			} else return false;
 		}
-	
 
 	render() {
 		const titleButton = document.getElementById("arrowButton");
@@ -95,13 +92,11 @@ class App extends Component {
 				<Particles className='particles' 
 				params={particlesOptions}
                 />
- 
 			<Sidebar/>
 			<HireMe />	
 			<FirstPicture />
 			<Footer />
 			<Contact />
-			
 			{(() => {
 				if(titleButton != null && this.checkTitleHeight()) {
 					titleButton.style.transition = "0.3s";
@@ -141,24 +136,3 @@ class App extends Component {
 }
 
 export default App;
-
-
-
-
-
-
-/**
- * 
- *
- * 
- * :)
- * 
- * 
- * 
- */
-
-
-
-
-
-
