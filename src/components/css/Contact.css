@@ -30,6 +30,7 @@
 	height: 42rem;
 	width: 30rem;
 	border: double 10px rgb(26, 7, 94);
+	background: linear-gradient(to right, #eaf0f6  1%,rgb(200, 242, 255) 20%, #c1fce7 100%);
 }
 
 #contactMeClass {
