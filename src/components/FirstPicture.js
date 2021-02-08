@@ -73,8 +73,8 @@ render() {
     	     		    	I&#39;ve learned a lot since, I had an intership at ABN AMRO Bank N.V., IT department (Head office).
     	     		    	Here I started really getting into programming.
     	     		    	After the internship I followed the  
-    	     		    	<a href="https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/" target="_blank" rel="noreferrer"> ZeroToMastery </a> 
-    	     		    online class. <br></br><br></br> I&#39;ve been writing code in the following languages.<br></br><br></br>
+    	     		    	<a href="https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/" target="_blank" rel="noreferrer"> ZeroToMastery</a>&nbsp;
+							 online class. <br></br><br></br> I&#39;ve been writing code in the following languages.<br></br><br></br>
     	     		    	- HTML5<br></br>
     	     		    	- CSS<br></br>
 							- JavaScript<br></br>

@@ -6,7 +6,7 @@ emailjs.init('user_eFbFfL2FoJtbHTkXQgxkA');
 const sendEmail = (e)  => {
 	e.preventDefault();
 
-	emailjs.sendForm('service_8vmef3d', 'template_wbkmp1p', e.target, 'user_eFbFfL2FoJtbHTkXQgxkA')
+	emailjs.sendForm('service_8vmef3d', 'template_wbkmp1p', e.target)
 	  .then((result) => {
 		  	if(document.getElementById("submitButton") != null) {
 			document.getElementById("submitButton").value = 'Message sent';
@@ -19,9 +19,8 @@ const sendEmail = (e)  => {
 	  }, (error) => {
 		  alert("Oops, something went wrong :(");
 	  });
-
   }
-
+  
 class Contact extends React.Component {
 	  constructor(props) {
 	    super(props);
@@ -89,12 +88,12 @@ class Contact extends React.Component {
 						    	<h3 id="formHeader">Contact me</h3>
 						    	 <input type="hidden" name="contact_number" />
 						    	<label htmlFor="nameInput2" id="nameLabel2">Name:</label><br></br><br></br>
-						    	<input id="nameInput2" type="text"  name="user_name" onChange={this.onNameChange} required></input> <br></br><br></br><br></br><br></br>
+						    	<input id="nameInput2" type="text"  name="user_name" onChange={this.onNameChange} required /> <br></br><br></br><br></br><br></br>
 						    	<label htmlFor="emailInput2" id="emailLabel2">Email:</label><br></br><br></br>
-						    	<input id="emailInput2" type="email"  name="user_email" onChange={this.onEmailChange} required></input> <br></br><br></br><br></br><br></br>
+						    	<input id="emailInput2" type="email"  name="user_email" onChange={this.onEmailChange} required /> <br></br><br></br><br></br><br></br>
 						    	<label htmlFor="questionInput2" id="questionLabel2">Question:</label><br></br><br></br><br></br><br></br>
-						    	<textarea rows="10" cols="10" id="questionInput2"  name="message" onChange={this.onQuestionChange} required>
-						    	</textarea> <br></br><br></br>
+						    	<textarea rows="10" cols="10" id="questionInput2"  name="message" onChange={this.onQuestionChange} required />
+						    	 <br></br><br></br>
 						    	<input id="submitButton2" type="submit" value="Send"></input> <br></br><br></br>
 						    </form>
 					    	</article>

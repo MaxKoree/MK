@@ -151,7 +151,6 @@ export default App;
  * 
  *
  * 
- * Check if email is valid door te checken if er een punt in zit bijvoorbeeld
  * :)
  * 
  * 
