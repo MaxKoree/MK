@@ -12,3 +12,11 @@
 	background-color: $body;
 	border-radius: 0.2rem;
 }
+
+@media only screen and (max-width: $phone-width) {
+
+    .contact-container {
+        width: 94vw;
+        margin-left: 3vw;
+    }
+}

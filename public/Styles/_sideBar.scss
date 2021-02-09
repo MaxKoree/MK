@@ -77,3 +77,39 @@
 
 
 }
+
+
+@media only screen and (max-width: $phone-width) {
+	.side-bar {
+
+		display: none;
+		width: 1vw;
+		
+
+		.side-bar-buttons {
+
+			height: 100vh;
+
+			.side-bar-buttons-hover {
+				border: none;
+			}
+
+			button {
+				padding: 0;
+				&:hover {
+					border-left: none;
+					border-right: none;
+				}
+			}
+			
+			b {
+				display: none;
+			}
+		}
+	}
+
+
+	.side-bar-socials {
+		display: none;
+	}
+}

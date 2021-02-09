@@ -23,3 +23,12 @@
 		margin-left: 45%;
 	}
 }
+
+
+@media only screen and (max-width: $phone-width) {
+
+    .footer-container {
+        width: 94vw;
+        margin-left: 3vw;
+    }
+}

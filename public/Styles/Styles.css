@@ -20,6 +20,12 @@
   margin-left: 45%;
 }
 
+@media only screen and (max-width: 600px) {
+  .footer-container {
+    width: 94vw;
+    margin-left: 3vw;
+  }
+}
 .contact-container {
   margin-left: 8.5%;
   width: 91%;
@@ -29,6 +35,12 @@
   border-radius: 0.2rem;
 }
 
+@media only screen and (max-width: 600px) {
+  .contact-container {
+    width: 94vw;
+    margin-left: 3vw;
+  }
+}
 .hire-me {
   margin-top: 0.6rem;
   margin-left: 8.5%;
@@ -59,6 +71,25 @@
   height: auto;
 }
 
+@media only screen and (max-width: 600px) {
+  .hire-me {
+    width: 94vw;
+    margin-left: 3vw;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+  }
+  .hire-me .hire-me-text {
+    margin-top: 0;
+    width: 96%;
+    margin-left: 2%;
+  }
+  .hire-me .hire-me-pic {
+    margin-top: 0;
+  }
+  .hire-me .hire-me-pic img {
+    width: 20%;
+  }
+}
 .side-bar {
   width: 8%;
   height: 100%;
@@ -118,6 +149,32 @@
   height: auto;
 }
 
+@media only screen and (max-width: 600px) {
+  .side-bar {
+    display: none;
+    width: 1vw;
+  }
+  .side-bar .side-bar-buttons {
+    height: 100vh;
+  }
+  .side-bar .side-bar-buttons .side-bar-buttons-hover {
+    border: none;
+  }
+  .side-bar .side-bar-buttons button {
+    padding: 0;
+  }
+  .side-bar .side-bar-buttons button:hover {
+    border-left: none;
+    border-right: none;
+  }
+  .side-bar .side-bar-buttons b {
+    display: none;
+  }
+
+  .side-bar-socials {
+    display: none;
+  }
+}
 body {
   margin: 0;
   padding: 0;
@@ -125,34 +182,8 @@ body {
   overflow-x: hidden;
 }
 
-h6 {
-  font-size: 49px;
-}
-
-h6 {
-  font-size: 60px;
-  margin: 30px;
-}
-
-h3 {
-  font-size: 50px;
-}
-
-input, textarea {
-  font-family: "JetBrains Mono", monospace;
-}
-
-h1 {
-  z-index: -2;
-  margin: 0px;
-}
-
-h2 {
-  margin: 0;
-  float: left;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 90px;
-  margin-left: 3rem;
+p, label {
+  color: #c9d4d1;
 }
 
 .portfolio {
@@ -175,6 +206,19 @@ h2 {
 }
 .portfolio img:hover {
   opacity: 88%;
+}
+
+@media only screen and (max-width: 600px) {
+  .portfolio {
+    width: 100%;
+    grid-template-columns: 1fr;
+    margin-left: 0;
+  }
+  .portfolio img {
+    margin-left: 3vw;
+    width: 94vw;
+    height: 30vh;
+  }
 }
 
 /*# sourceMappingURL=Styles.css.map */
