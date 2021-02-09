@@ -1,147 +1,79 @@
 @import "_variables.scss";
 
-ul {
-	margin: 0px;
-	padding: 0px;
-}
 
-#linkL {
-	display: inline-grid;
-	grid-template-columns: auto auto auto;
-	position: fixed;
-	  justify-content: space-evenly;
-	  bottom: 0;
-	  grid-column-gap: 30px;
-	  margin-left: 38px;
-	  margin-bottom: 9px;
-}
-
-.sideBarClass {
-	height: 60px;
-}
-
-#linkList {
-	display: inline-grid;
-	position: fixed;
-	background: linear-gradient(to right, rgb(241, 134, 134) 1%,rgb(238, 144, 144) 30%, white 100%);
-	border-right: double 10px black;
-	margin: 0px;
-	padding: 0px;
+.side-bar {
+	width: $page-margin;
 	height: 100%;
-	text-align: center;
-	width: 19%;
-	padding-top: 2rem;
-	z-index: 0;
-}
-
-#smallLinkList {
-	display: inline-grid;
 	position: fixed;
-	background: linear-gradient(to right, rgb(241, 134, 134) 1%,rgb(238, 144, 144) 50%, white 100%);
-	border-right: double 10px black;
-	margin: 0px;
-	padding: 0px;
-	height: 100%;
-	text-align: center;
-	width:5rem;
-	padding-top: 1rem;
-	z-index: 0;
-	grid-template-columns: auto;
-	grid-row-gap: 5px;
-	transition: 0.9s;
-}
+	left: 0;
+	top: 0;
+	background-color: $sidenav-colour;
+
+	
+
+	.side-bar-buttons {
+		display: grid;
+		grid-auto-flow: row;
+		height: 92vh;
+
+		.side-bar-buttons-hover {
+			color: $font-colour-button-hover;
+			background-color: $sidenav-buttons-hover;
+			box-sizing: border-box;
+			border-left: 0.2rem solid $sidenav-buttons;
+			border-right: 0.2rem solid $sidenav-buttons;
+		}
+
+		button {
+			border: none;
+			height: auto;
+			width: 100%;
+			background-color: $sidenav-buttons;
+			color: $font-colour-button;
+			border-radius: 0.2rem;
+
+			&:hover {
+				color: $font-colour-button-hover;
+				background-color: $sidenav-buttons-hover;
+				box-sizing: border-box;
+				border-left: 0.2rem solid $sidenav-buttons;
+				border-right: 0.2rem solid $sidenav-buttons;
+			}
+		}
+	}
 
 
-#upworkIMG {
-	width: 200px;
-	height: 50px;
-	border: solid 2px black;
-	padding: 1rem;
-	border-radius: 6px;
-}
+	
 
-#linkedinIMG {
-	width: 200px;
-	height: 50px;
-	border: solid 2px black;
-	padding: 1rem;
-	border-radius: 6px;
-}
+	.side-bar-socials {
+		height: 8vh;
+		display: grid;
+		grid-auto-flow: column;
 
-#aboutmeButton2, #contactButton2, #arrowButton2 {
-   width: 66px;
-   height: 66px;
-   padding: 1rem;
-   font-size: 20px;
-   font-family: 'JetBrains Mono', monospace;
-   background: none;
-   cursor: pointer;
-   text-align: center;
-   border: solid 2px black;
-   border-radius: 6px;
-}
+		a {
 
+			height: 100%;
+			width: 100%;
+			border-radius: 0.2rem;
+			background-color: $sidenav-buttons;
 
-#linkedinIcon, #upworkIcon, #githubCat{
-	width: 30px;
-	height: 30px;
-	border: solid 2px black;
-	padding: 9px;
-	border-radius: 6px;
-}
+			&:hover {
+				background-color: $sidenav-buttons-hover;
 
-#githubIMG {
-	width: 200px;
-	height: 70px;
-	border: solid 2px black;
-	padding: 1rem;
-	border-radius: 6px;
-}
-
-#linkedinIMG:hover, #upworkIMG:hover, #githubIMG:hover, #arrowButton:hover, #aboutmeButton:hover, #contactButton:hover, 
-#linkedinIcon:hover, #upworkIcon:hover, #githubCat:hover, #aboutmeButton2:hover, #contactButton2:hover, #arrowButton2:hover {
-	border: solid 2px black;
-    transition: 0.9s;
-    border-radius: 6px;
-    box-shadow: 4px 6px black;
-    color: black;
-}
-
-#arrowButton {
-	cursor: pointer;
-	background: none;
-	font-size: 35px;
-	color: rgb(53, 53, 53);
-	font-family: 'JetBrains Mono', monospace;
-	border: solid 2px black;
-	padding: 1rem;
-	border-radius: 6px;
-	width: 200px;
-	margin-left: 3rem;
-}
-
-#aboutmeButton, #contactButton {
-   width: 200px;
-   padding: 1rem;
-   font-size: 35px;
-   font-family: 'JetBrains Mono', monospace;
-   width: 200px;
-   color: rgb(53, 53, 53);
-   background: none;
-   cursor: pointer;
-   text-align: center;
-   border: solid 2px black;
-   padding: 1rem;
-   border-radius: 6px;
-   margin-left: 3rem;
-}
+				img {
+					filter: $font-colour-filter-hover;
+				}
+			}
+	
+	
+			img {
+				filter: $font-colour-filter;
+				margin: 20%;
+				width: 60%;
+				height: auto;
+			}
+		}
+	}
 
 
-button:focus {
-    outline-style : none;
-}
-
-#contactButton2 {
-	font-size: 9px;
-	text-align: center;
 }

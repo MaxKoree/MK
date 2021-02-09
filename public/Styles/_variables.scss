@@ -1,4 +1,43 @@
 
 // Declare variables like this, choose a name + value, can be any type of value, colour, length, filter etc
-$background-colour: green;
+
+
+// --- Colours ---
+$background-colour: #e4e7e4;
+$background-colour-dark: #404444;
+$sidenav-colour: #282b2a;
+$sidenav-buttons: #282b2a;
+$sidenav-buttons-hover: #333635;
+$body: #333635;
+
+
+$portfolio-pic: #bdc9bd;
+$portfolio-pic-hover: #cfd8cf;
+
+
+$font-colour-button: #c9d4d1;
+$font-colour-button-hover: white;
+$font-colour-filter: invert(92%) sepia(9%) saturate(161%) hue-rotate(113deg) brightness(91%) contrast(90%);
+$font-colour-filter-hover: invert(100%) sepia(0%) saturate(7500%) hue-rotate(144deg) brightness(110%) contrast(105%);
+
+
+$sidenav-colour-filter: invert(94%) sepia(12%) saturate(179%) hue-rotate(71deg) brightness(84%) contrast(88%);
+
+
+
+
+
+// --- Sizes ---
 $sidenav-width: 20rem;
+$page-size: 92%;
+$page-margin: 8%;
+
+$page-indent-size: 91%;
+$page-indent-margin: 8.5%;
+$page-indent-margin-portfolio: 8.67%;
+
+
+
+
+// --- Screen-sizes ---
+$phone-width: 600px;
