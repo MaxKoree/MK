@@ -28,7 +28,6 @@ class App extends Component {
 	}
 	
 	 componentDidMount() {
-	 fetch('http://localhost:3690').then(response => response.json());
 	  this.updateWindowDimensions();
 	  window.addEventListener('resize', this.updateWindowDimensions);
 	  window.addEventListener('scroll', this.listenToScroll);

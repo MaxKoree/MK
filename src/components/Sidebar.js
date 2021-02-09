@@ -122,7 +122,7 @@ render() {
 							  </a>
 							  </ul>
 							  <ul>
-							  <a href="https://www.upwork.com/freelancers/~01361471f78248a9b3" target="_blank" rel="noreferrer">
+							  <a href="https://www.upwork.com/freelancers/~01361471f78248a9b3?viewMode=1" target="_blank" rel="noreferrer">
 							  <img src={upworkIcon} alt="upWork" id="upworkIcon" />
 							  </a>
 							  </ul>
