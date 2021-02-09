@@ -73,7 +73,7 @@ article {
 	font-size: 20px;
 	border: none;
 	background: none;
-	border: solid  rgb(2, 112, 173) 3px;
+	border: solid rgb(3, 39, 117) 2px;
 	float: left;
 	margin-left: 90px;
 	margin: 20px 0px 0px 90px;
@@ -92,7 +92,7 @@ article {
 	border: none; 
 	background: none;
 	padding: 5px;
-	border: double 5px rgb(2, 112, 173);
+	border: double 2px rgb(3, 39, 117);
 	border-radius: 5px;
 	height: 6rem;
 	width: 500px;
@@ -113,7 +113,7 @@ article {
 	font-size: 20px;
 	border: none;
 	background: none;
-	border: solid  rgb(2, 112, 173) 3px;
+	border: solid  rgb(3, 39, 117) 2px;
 	border-radius: 9px;
 }
 
@@ -122,7 +122,7 @@ article {
 	font-size: 20px;
 	border: none;
 	background: none;
-	border: solid  rgb(2, 112, 173) 3px;
+	border: solid  rgb(3, 39, 117) 2px;
 	border-radius: 9px;
  }
 
@@ -143,7 +143,7 @@ article {
 	font-size: 15px;
 	border: none; 
 	background: none;
-	border: double 5px rgb(2, 112, 173);
+	border: double 2px rgb(3, 39, 117);
 	border-radius: 5px;
 	height: 6rem;
 	width: 15rem;
@@ -162,12 +162,12 @@ article {
 	border: none;
 	height: 40px;
 	width: 230px;
-	border: solid 1px rgb(33, 128, 206);
+	border: solid 2px rgb(3, 39, 117);
 	border-radius: 6px;
 }
 
 #submitButton2:hover {
-	border: solid 1px rgb(9, 160, 77);
+	border: solid 2px rgb(3, 39, 117);
     transition: 0.9s;
     border-radius: 6px;
     box-shadow: 4px 6px #0270ad;
@@ -201,12 +201,12 @@ article {
 	border: none;
 	height: 40px;
 	width: 369px;
-	border: solid 1px rgb(3, 39, 117);
+	border: solid 2px rgb(3, 39, 117);
 	border-radius: 6px;
 }
 
 #submitButton:hover {
-	border: solid 1px rgb(3, 39, 117);
+	border: solid 2px rgb(3, 39, 117);
     transition: 0.9s;
     border-radius: 6px;
     box-shadow: 4px 6px #0270ad;
