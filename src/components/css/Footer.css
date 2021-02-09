@@ -1,6 +1,6 @@
 .footerClass {
 	margin-top: 3rem;
-	background: linear-gradient(to bottom, rgb(252, 141, 141) 1%,rgb(238, 144, 144) 20%, white 80%);
+	background: linear-gradient(to right,  white  1%,rgb(200, 242, 255) 70%, #9cffdc 100%);
 	border-bottom: double 10px rgb(128, 0, 0);
 	border-top: solid 10px rgb(80, 0, 0);
 	height: 30rem;
@@ -44,10 +44,10 @@ span {
 	font-size: 23px;
 	text-align: center;
 	padding: 9px;
-	-webkit-user-select: none; /* Safari */        
--moz-user-select: none; /* Firefox */
--ms-user-select: none; /* IE10+/Edge */
-user-select: none; /* Standard */
+	-webkit-user-select: none;        
+	-moz-user-select: none; 
+	-ms-user-select: none; 
+	user-select: none; 
 }
 
 

@@ -162,6 +162,8 @@ article {
 	border: none;
 	height: 40px;
 	width: 230px;
+	border: solid 1px rgb(33, 128, 206);
+	border-radius: 6px;
 }
 
 #submitButton2:hover {
@@ -199,6 +201,8 @@ article {
 	border: none;
 	height: 40px;
 	width: 369px;
+	border: solid 1px rgb(3, 39, 117);
+	border-radius: 6px;
 }
 
 #submitButton:hover {
