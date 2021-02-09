@@ -170,7 +170,7 @@ article {
 	border: solid 2px rgb(3, 39, 117);
     transition: 0.9s;
     border-radius: 6px;
-    box-shadow: 4px 6px #0270ad;
+    box-shadow: 4px 6px rgb(3, 39, 117);
 }
 
 
@@ -209,7 +209,7 @@ article {
 	border: solid 2px rgb(3, 39, 117);
     transition: 0.9s;
     border-radius: 6px;
-    box-shadow: 4px 6px #0270ad;
+    box-shadow: 4px 6px rgb(3, 39, 117);
 }
 
 .contactBackground {
