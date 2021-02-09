@@ -1,12 +1,12 @@
 import React from 'react';
 import './css/Contact.css';
 import emailjs from 'emailjs-com';
-emailjs.init(process.env.USER_ID);
+emailjs.init('user_eFbFfL2FoJtbHTkXQgxkA');
 
 const sendEmail = (e)  => {
 	e.preventDefault();
 
-	emailjs.sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, e.target)
+	emailjs.sendForm('service_8vmef3d', 'template_wbkmp1p', e.target)
 	  .then((result) => {
 		  	if(document.getElementById("submitButton") != null) {
 			document.getElementById("submitButton").value = 'Message sent';
