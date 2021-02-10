@@ -35,6 +35,7 @@ const contactScroll = () => {
 }
 
 
+
 interface SideBarState {
 	theposition: number,
 }
