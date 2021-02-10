@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/Contact.css';
+import './css/Contact.scss';
 import emailjs from 'emailjs-com';
 emailjs.init('user_eFbFfL2FoJtbHTkXQgxkA');
 

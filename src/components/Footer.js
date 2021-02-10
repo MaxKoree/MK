@@ -1,6 +1,6 @@
 import React from 'react';
 import Tilt from 'react-tilt';
-import './css/Footer.css';
+import './css/Footer.scss';
 
 function Footer() {
   return (

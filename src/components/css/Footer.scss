@@ -1,24 +1,22 @@
 .footerClass {
-	margin-top: 3rem;
+
 	background: linear-gradient(to right,  white  1%,rgb(200, 242, 255) 70%, #9cffdc 100%);
-	border-bottom: double 10px rgb(128, 0, 0);
-	border-top: solid 10px rgb(80, 0, 0);
+	border-bottom: double 10px rgb(26, 7, 94);
+	border-top: solid 10px rgb(0, 0, 0);
 	height: 30rem;
-    width: 100%;
+    width: 81%;
     text-align: center;
     float: right;
-	margin-left: 3rem;
+	
 }
 
 #footerTitle {
-	margin-top: 3rem;
-	margin-bottom: 3rem;
-	font-size: 50px;
-	width: 80%;
-	margin-left: 3rem;
-	position: relative;
 	text-align: center;
-	float: right;
+	margin-top: 6rem;
+	margin-bottom: 3rem;
+	width: 100%;
+	font-size: 60px;
+	transform: skew(10deg);
 }
 
 .footerGrid {
@@ -26,7 +24,7 @@
 	padding: 0px;
 	text-align: center;
 	padding-top: 3rem;
-	margin-left: 3rem;
+	
 	z-index: 0;
 	grid-template-columns: auto auto;
 	grid-column-gap: 1rem;
@@ -38,7 +36,7 @@
 
 span {
 	height: 4rem;
-	width: 19rem;
+	width: 100%;
 	border: double 2px black;
 	border-radius: 6px;
 	font-size: 23px;

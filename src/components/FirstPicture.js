@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/FirstPicture.css';
+import './css/FirstPicture.scss';
 import FirstPicture from './img/0001.png';
 
 class PictureClass extends React.Component {

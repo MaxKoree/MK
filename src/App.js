@@ -139,9 +139,9 @@ export default App;
 /**
  * 
  * alles center
- * geen gradient verander naar vaste neutrale kleur met subtiel een sterke kleur
+ * geen gradient verander naar vaste neutrale kleur met subtiel en een sterke kleur
+ * verander responsive naar cscc versie zie mk_cynx
  * full stack developer title bij foto
- * implement scss
  * verander font
  * dark mode met scss
  * maak templates en laat zien
