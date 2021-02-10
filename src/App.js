@@ -27,7 +27,7 @@ class App extends Component {
 		this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
 	}
 	
-	 componentDidMount() {
+	 componentDidMount() {	
 	  this.updateWindowDimensions();
 	  window.addEventListener('resize', this.updateWindowDimensions);
 	  window.addEventListener('scroll', this.listenToScroll);
@@ -135,3 +135,15 @@ class App extends Component {
 }
 
 export default App;
+
+/**
+ * 
+ * alles center
+ * geen gradient verander naar vaste neutrale kleur met subtiel een sterke kleur
+ * full stack developer title bij foto
+ * implement scss
+ * verander font
+ * dark mode met scss
+ * maak templates en laat zien
+ * 
+ */
