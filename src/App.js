@@ -137,13 +137,10 @@ class App extends Component {
 export default App;
 
 /**
- * 
- * alles center
- * geen gradient verander naar vaste neutrale kleur met subtiel en een sterke kleur
- * verander responsive naar cscc versie zie mk_cynx
- * full stack developer title bij foto
- * verander font
+ *
+ * een quote als eerste zin?
  * dark mode met scss
+ * verander font
  * maak templates en laat zien
  * 
  */

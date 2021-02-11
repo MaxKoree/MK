@@ -1,4 +1,4 @@
-$backgroundRed: rgb(255, 205, 205);
+@import "variables.scss";
 
 
 
@@ -17,7 +17,6 @@ ul {
 	position: fixed;
 	justify-content: space-evenly;
 	bottom: 0;
-	grid-column-gap: 30px;
 	margin-bottom: 9px;
 }
 
@@ -28,6 +27,7 @@ ul {
 #linkList {
 	display: inline-grid;
 	justify-items: center;
+	grid-row-gap: 30px;
 	position: fixed;
 	background-color: $backgroundRed;
 	border-right: solid 10px rgb(0, 0, 0);
@@ -39,24 +39,6 @@ ul {
 	padding-top: 2rem;
 	z-index: 0;
 }
-
-#smallLinkList {
-	display: inline-grid;
-	position: fixed;
-	background: linear-gradient(to right, rgb(241, 134, 134) 1%,rgb(238, 144, 144) 50%, white 100%);
-	border-right: double 10px black;
-	margin: 0px;
-	padding: 0px;
-	height: 100%;
-	text-align: center;
-	width:5rem;
-	padding-top: 1rem;
-	z-index: 0;
-	grid-template-columns: auto;
-	grid-row-gap: 5px;
-	transition: 0.9s;
-}
-
 
 #upworkIMG {
 	width: 200px;
@@ -73,20 +55,6 @@ ul {
 	padding: 1rem;
 	border-radius: 6px;
 }
-
-#aboutmeButton2, #contactButton2, #arrowButton2 {
-   width: 66px;
-   height: 66px;
-   padding: 1rem;
-   font-size: 20px;
-   font-family: 'JetBrains Mono', monospace;
-   background: none;
-   cursor: pointer;
-   text-align: center;
-   border: solid 2px black;
-   border-radius: 6px;
-}
-
 
 #linkedinIcon, #upworkIcon, #githubCat{
 	width: 30px;
@@ -145,7 +113,72 @@ button:focus {
     outline-style : none;
 }
 
-#contactButton2 {
-	font-size: 9px;
-	text-align: center;
+
+
+@media only screen and (max-width: $small-width) {
+
+	#linkList {
+		display: inline-grid;
+		grid-template-rows: 100px 90px;
+		position: fixed;
+		background: $backgroundRed;
+		border-right: double 10px black;
+		padding: 0px;
+		height: 100%;
+		text-align: center;
+		width: 6rem;
+		padding-top: 1rem;
+		z-index: 0;
+		grid-template-columns: auto;
+		justify-items: center;
+		transition: 0.9s;
+	}
+	
+	ul {
+		width: 69px;
+		
+	}
+
+
+	#aboutmeButton, #contactButton, #arrowButton {
+		width: 69px;
+		height: 69px;
+		padding: 1rem;
+		font-size: 12px;
+		font-family: 'JetBrains Mono', monospace;
+		background: none;
+		cursor: pointer;
+		text-align: center;
+		border: solid 2px black;
+		border-radius: 6px;
+		grid-row-gap: 29px;
+	 }
+
+	 #linkL {
+		width: 7rem;
+		display: inline-grid;
+		justify-items: center;
+		align-items: center;
+		grid-template-columns: auto;
+		position: fixed;
+		justify-content: space-evenly;
+		bottom: 0;
+		grid-row-gap: 19px;
+		margin-bottom: 9px;
+	}
+
+}
+
+@media only screen and (max-height: $small-height) {
+	#linkList {grid-template-rows: 100px 90px;}
+}
+
+@media only screen and (max-height: $smaller-height) {
+	#linkList {grid-template-rows: 50px 50px;}
+}
+
+@media only screen and (max-height: $tooSmall) {
+	#linkL {
+		display: none;
+	}
 }

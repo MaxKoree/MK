@@ -14,7 +14,7 @@ const aboutMeScroll = () => {
 
 const contactScroll = () => {
 	window.scroll({
-		  top: 2560,
+		  top: 2550,
 		  behavior: 'smooth'
 		});
 }
@@ -65,55 +65,28 @@ class Sidebar extends React.Component {
 			}
 			
 render() {
-	const tooSmall = this.checkHeight();
-	const tooSmall2 = this.checkWidth();
+
     return (
     		<div className="sideBarClass">
-    	    {tooSmall || tooSmall2 ? (
-    	    			    	    <ul id="smallLinkList">
-    	    	    	    	    <ul>
-    	    	    	    	    <button id="arrowButton2" onClick={upScroll}>&#8593;</button>
-    	    	    	    	    </ul>
-    	    	    	    	    <ul>
-    	    	    	    	    <button id="aboutmeButton2" onClick={aboutMeScroll}><b>Me</b></button>
-    	    	    	    	    </ul>
-    	    	    	    	    <ul>
-    	    	    	    	    <button id="contactButton2" onClick={contactScroll}><b>Contact</b></button>
-    	    	    	    	    </ul>
-    	    	    	    		<ul>
-    	    	    	    		<a href="https://nl.linkedin.com/in/max-koree-118971194" target="_blank" rel="noreferrer">
-    	    	    	    		<img src={linkedinIcon} alt="linkedIn" id="linkedinIcon" />
-    	    	    	    		</a>
-    	    	    	    	    </ul>
-    	    	    	    	    <ul>
-    	    	    	    		<a href="https://www.upwork.com/freelancers/~01361471f78248a9b3" target="_blank" rel="noreferrer">
-    	    	    	    		<img src={upworkIcon} alt="upWork" id="upworkIcon" />
-    	    	    	    		</a>
-    	    	    	    	    </ul>
-    	    	    	    	    <ul>
-    	    	    	    	    <a href="https://github.com/MaxKoree" target="_blank" rel="noreferrer">
-    	    	    	    	    <img src={githubCat} alt="GitHub" id="githubCat" /> 
-    	    	    	    	    </a>
-    	    	    	    	    </ul>  
-    	    	    	    	    </ul>
-    			      ) : (
 						<div>
 						<ul id="linkList">
+						
 					  <ul>
-					 <Tilt style={{ height: 76, width: 200 }} ref={this.wrapper}>
+					 <Tilt ref={this.wrapper}>
  					<button id="arrowButton" ref={this.wrapper} onClick={upScroll}><b>Title{this.props.children}</b></button>
 					</Tilt>
 					  </ul>
 					  <ul>
-					  <Tilt style={{ height: 76, width: 200 }} ref={this.wrapper}>
+					  <Tilt  ref={this.wrapper}>
  					<button id="aboutmeButton" ref={this.wrapper} onClick={aboutMeScroll}><b>About me{this.props.children}</b></button>
 					</Tilt>
 					  </ul>
 					  <ul>
-					  <Tilt style={{ height: 76, width: 200 }} >
+					  <Tilt  className="tilt" >
  					<button id="contactButton" ref={this.wrapper} onClick={contactScroll} ><b>Contact{this.props.children}</b></button>
 					</Tilt>
 					  </ul>
+				
 					  </ul>
 					  <ul id="linkL">
 						  <ul>
@@ -134,7 +107,6 @@ render() {
 						  </ul>
 					  
 					  </div>
-    			  )}
     	    </div>
     );
 }

@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .hireMeClass {
     height: 60rem;
     width: 81%;
@@ -39,7 +41,7 @@ h2 {
 	text-align: center;
 	margin-top: 11rem;
 	margin-bottom: 3rem;
-	width: 100%;
+	width: 90%;
 	font-size: 60px;
 	transform: skew(10deg);
 }
