@@ -58,7 +58,7 @@ class Contact extends React.Component {
 		    <div className="contactClass">
     			    		  <div className="bigContact">	
     						    <div className="contactMeClass">
-    						    <div className="contactBackground" />
+    						    <div className="contactBackground" id="contactBackground" />
     						    	<article>
     						    	<form id='form' className="contact-form" onSubmit={sendEmail}>
     							    	<h3>Contact Me</h3>

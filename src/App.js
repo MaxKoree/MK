@@ -6,6 +6,7 @@ import Particles from 'react-particles-js';
 import HireMe from './components/HireMe';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import ThemeCheckBox from './components/ThemeCheckBox';
 
 
 
@@ -13,7 +14,7 @@ import Footer from './components/Footer';
 const emailjs = require('emailjs-com');
 emailjs.init('user_eFbFfL2FoJtbHTkXQgxkA');
 const particlesOptions = {
-		 particles :{"number":{"value":69,"density":{"enable":false,"value_area":800}},"color":{"value":"#080093"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"http://wiki.lexisnexis.com/academic/images/f/fb/Itunes_podcast_icon_300.jpg","width":100,"height":100}},"opacity":{"value":0.5,"random":true,"anim":{"enable":true,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":2,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":false,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":14,"direction":"none","random":false,"straight":true,"out_mode":"out","bounce":false,"attract":{"enable":true,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"window","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":200,"line_linked":{"opacity":1}},"bubble":{"distance":236,"size":5,"duration":0.1,"opacity":8,"speed":3},"repulse":{"distance":169,"duration":0.4},"push":{"particles_nb":36},"remove":{"particles_nb":2}}},"retina_detect":true};
+		 particles :{"number":{"value":69,"density":{"enable":false,"value_area":800}},"color":{"value":"#999"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"http://wiki.lexisnexis.com/academic/images/f/fb/Itunes_podcast_icon_300.jpg","width":100,"height":100}},"opacity":{"value":0.5,"random":true,"anim":{"enable":true,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":2,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":false,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":14,"direction":"none","random":false,"straight":true,"out_mode":"out","bounce":false,"attract":{"enable":true,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"window","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":200,"line_linked":{"opacity":1}},"bubble":{"distance":236,"size":5,"duration":0.1,"opacity":8,"speed":3},"repulse":{"distance":169,"duration":0.4},"push":{"particles_nb":36},"remove":{"particles_nb":2}}},"retina_detect":true};
 
 
 
@@ -85,18 +86,18 @@ class App extends Component {
 		const smallContact = document.getElementById("contactButton2");
 		const smallaboutMe = document.getElementById("aboutmeButton2");
 		const aboutMeButton = document.getElementById("aboutmeButton");
-
 		return (
 			<div>
 				<Particles className='particles' 
 				params={particlesOptions}
                 />
 			<Sidebar/>
+			<ThemeCheckBox />
 			<HireMe />	
 			<FirstPicture />
 			<Footer />
 			<Contact />
-			{(() => {
+			{(() => {	  
 				if(titleButton != null && this.checkTitleHeight()) {
 					titleButton.style.transition = "0.3s";
 					titleButton.style.boxShadow = "4px 6px black";
@@ -138,8 +139,9 @@ export default App;
 
 /**
  *
+ * fix background bij anne?
  * een quote als eerste zin?
- * dark mode met scss
+ * style checkbox :)
  * verander font
  * maak templates en laat zien
  * 

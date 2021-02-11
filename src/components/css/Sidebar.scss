@@ -29,7 +29,7 @@ ul {
 	justify-items: center;
 	grid-row-gap: 30px;
 	position: fixed;
-	background-color: $backgroundRed;
+	background-color: white;
 	border-right: solid 10px rgb(0, 0, 0);
 	margin: 0px;
 	padding: 0px;
@@ -56,12 +56,20 @@ ul {
 	border-radius: 6px;
 }
 
-#linkedinIcon, #upworkIcon, #githubCat{
+#linkedinIcon, #upworkIcon{
 	width: 30px;
 	height: 30px;
 	border: solid 2px black;
-	padding: 9px;
+	padding: 3px;
 	border-radius: 6px;
+}
+
+#githubCat {
+	width: 30px;
+	height: 30px;
+	border: solid 2px black;
+	padding: 3px;
+	border-radius: 50%;
 }
 
 #githubIMG {
@@ -73,11 +81,19 @@ ul {
 }
 
 #linkedinIMG:hover, #upworkIMG:hover, #githubIMG:hover, #arrowButton:hover, #aboutmeButton:hover, #contactButton:hover, 
-#linkedinIcon:hover, #upworkIcon:hover, #githubCat:hover, #aboutmeButton2:hover, #contactButton2:hover, #arrowButton2:hover {
-	border: solid 2px black;
+#linkedinIcon:hover, #upworkIcon:hover, #aboutmeButton2:hover, #contactButton2:hover, #arrowButton2:hover {
+	border: solid 2px $borderButton;
     transition: 0.9s;
     border-radius: 6px;
-    box-shadow: 4px 6px black;
+    box-shadow: 4px 6px $borderButton;
+    color: black;
+}
+
+#githubCat:hover {
+	border: solid 2px $borderButton;
+    transition: 0.9s;
+    border-radius: 50%;
+    box-shadow: 4px 6px $borderButton;
     color: black;
 }
 
@@ -85,7 +101,7 @@ ul {
 	cursor: pointer;
 	background: none;
 	font-size: 35px;
-	color: rgb(53, 53, 53);
+	color: rgb(0, 0, 0);
 	font-family: 'JetBrains Mono', monospace;
 	border: solid 2px black;
 	padding: 1rem;
@@ -99,13 +115,21 @@ ul {
    font-size: 35px;
    font-family: 'JetBrains Mono', monospace;
    width: 200px;
-   color: rgb(53, 53, 53);
+   color: rgb(0, 0, 0);
    background: none;
    cursor: pointer;
    text-align: center;
    border: solid 2px black;
    padding: 1rem;
    border-radius: 6px;
+}
+
+#aboutmeButton, #contactButton, #arrowButton {
+	background-color: $backgroundRed;
+}
+
+#githubCat, #linkedinIcon, #upworkIcon {
+	border: 2px solid $borderButton;
 }
 
 
@@ -169,12 +193,10 @@ button:focus {
 
 }
 
-@media only screen and (max-height: $small-height) {
-	#linkList {grid-template-rows: 100px 90px;}
-}
+
 
 @media only screen and (max-height: $smaller-height) {
-	#linkList {grid-template-rows: 50px 50px;}
+	#linkList {grid-template-rows: 50px 50px; grid-row-gap: 90px;}
 }
 
 @media only screen and (max-height: $tooSmall) {

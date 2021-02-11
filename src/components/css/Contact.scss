@@ -22,8 +22,6 @@
 .bigContact {
 	width: 100%;
 	display: inline-grid;
-	
-	
 }
 
 #contactMeHeader {
@@ -52,7 +50,7 @@
 	text-align: center;
 	height: 42rem;
 	width: 30rem;
-	border: double 10px rgb(26, 7, 94);
+	border: double 10px white;
 }
 
 #contactMeClass {
@@ -87,7 +85,7 @@ article {
 	font-size: 20px;
 	border: none;
 	background: none;
-	border: solid rgb(3, 39, 117) 2px;
+	border: solid white 2px;
 	float: left;
 	margin-left: 90px;
 	margin: 20px 0px 0px 90px;
@@ -106,7 +104,7 @@ article {
 	border: none; 
 	background: none;
 	padding: 5px;
-	border: solid 2px rgb(3, 39, 117);
+	border: solid 2px white;
 	border-radius: 5px;
 	height: 6rem;
 	width: 500px;
@@ -191,7 +189,7 @@ article {
     width: 81%;
 	text-align: center;
 	float: right;
-	background: linear-gradient(to right, #eaf0f6  1%,rgb(200, 242, 255) 20%, #51fcc0 100%);
+	background: linear-gradient(to right, #eaf0f6  1%, $lightBlue 20%, $turq 100%);
 	position: absolute;
 	z-index: -5;
 }
@@ -211,7 +209,7 @@ article {
 	border: none;
 	height: 40px;
 	width: 369px;
-	border: solid 2px rgb(3, 39, 117);
+	border: solid 2px white;
 	border-radius: 6px;
 }
 

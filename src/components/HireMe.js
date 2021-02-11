@@ -11,7 +11,7 @@ const hireMe = () => {
 function HireMe() {
   return (
     <div className="hireMeClass">
-    <h2>Need work done?</h2>
+    <h2 id="firstTitle">Need work done?</h2>
  				<h1 id="hireMeButton" onClick={hireMe}>Hire Me.</h1>
     <h2 id="bigTitle">Full stack developer</h2>
     </div>
