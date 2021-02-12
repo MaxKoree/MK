@@ -214,10 +214,10 @@ article {
 }
 
 #submitButton:hover {
-	border: solid 2px rgb(3, 39, 117);
+	border: solid 2px white;
     transition: 0.9s;
     border-radius: 6px;
-    box-shadow: 4px 6px rgb(3, 39, 117);
+    box-shadow: 4px 6px white;
 }
 
 #inputBackground {
@@ -229,15 +229,6 @@ article {
 	position: absolute;
 	z-index: -5;
 	margin-top: -16rem;
-}
-
-#title {
-	text-align: center;
-	margin-left: 9rem;
-	margin-top: 8rem;
-	width: 100%;
-	font-size: 60px;
-	transform: skew(10deg);
 }
 
 

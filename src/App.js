@@ -139,10 +139,6 @@ export default App;
 
 /**
  *
- * fix background bij anne?
- * een quote als eerste zin?
- * style checkbox :)
- * verander font
  * maak templates en laat zien
  * 
  */

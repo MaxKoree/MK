@@ -38,7 +38,7 @@ render() {
     <div >
     	    	{tooSmall ? (
     	    			  <div className="firstPictureClass2">
-    	    	    	    	
+    	    	    	    	<h1 className="aboutmeHeader" id="aboutmeHeader">About me</h1>
     	    	    	<img src={FirstPicture} alt="Me :)" id="firstPicture2"></img>
     	    	    	    	<div className="textBackground" id="textBackground"></div>
     			    	<p id="p">Hey, i&#39;m Max Koree. i&#39;m 18 years old, live in Amsterdam. I&#39;m working towards the full stack developer title.

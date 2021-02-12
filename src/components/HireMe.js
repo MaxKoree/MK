@@ -3,7 +3,7 @@ import './css/HireMe.scss';
 
 const hireMe = () => {
 	window.scroll({
-		  top: 2550,
+		  top: 2543,
 		  behavior: 'smooth'
 		});
 }
@@ -11,7 +11,7 @@ const hireMe = () => {
 function HireMe() {
   return (
     <div className="hireMeClass">
-    <h2 id="firstTitle">Need work done?</h2>
+    <h2 id="firstTitle">Do the best you can</h2>
  				<h1 id="hireMeButton" onClick={hireMe}>Hire Me.</h1>
     <h2 id="bigTitle">Full stack developer</h2>
     </div>

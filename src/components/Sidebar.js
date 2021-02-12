@@ -14,7 +14,7 @@ const aboutMeScroll = () => {
 
 const contactScroll = () => {
 	window.scroll({
-		  top: 2550,
+		  top: 2543,
 		  behavior: 'smooth'
 		});
 }

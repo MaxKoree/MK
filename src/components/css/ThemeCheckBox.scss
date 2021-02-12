@@ -1,6 +1,41 @@
 .checkboxClass {
-    height: 30px;
-    width: 30px;
+    height: 60px;
+    width: 60px;
     float: right;
+    z-index: 100;
+    margin-right: 3rem;
+}
 
+.darkMode:before {
+    width: 90px;
+    height: 90px;
+    border: none;
+    content: "";
+    
+  cursor: pointer;
+     
+        border-radius: 50%;
+        box-shadow: 12px 15px 0 0 #999;
+      
+    position: absolute;
+   
+ 
+    z-index: 100;
+ 
+}
+
+input[type=checkbox] {
+    z-index: 100;
+    width: 40px;
+    height: 40px;
+    border: solid 1px #999;
+    border-radius: 6px;
+}
+
+input:checked {
+   
+    all: unset;
+    z-index: 100;
+ 
+ 
 }
