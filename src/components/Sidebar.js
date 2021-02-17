@@ -29,48 +29,16 @@ const upScroll = () => {
 class Sidebar extends React.Component {
 	  constructor(props) {
 			super(props);
-			this.wrapper = React.createRef();
 		    this.state = {
-		      height: '',
-		      width: '',
-		      tooSmall: false
+
 		    }
-		    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
 		  }
-	  
-	  componentDidMount() {
-			  this.updateWindowDimensions();
-			  window.addEventListener('resize', this.updateWindowDimensions);
-			 }
-			 
-			componentWillUnmount() {
-				window.removeEventListener('resize', this.updateWindowDimensions);
-			}
 
-			updateWindowDimensions() {
-				this.setState({ width: window.innerWidth, height: window.innerHeight });
-				
-			}
-			
-			checkHeight() { 
-				 if(this.state.height < 600) {
-					return true;
-				 }	else return false;
-			}
-			
-			checkWidth() { 
-				 if(this.state.width < 1420) {
-					return true;
-				 }	else return false;
-			}
-			
 render() {
-
     return (
     		<div className="sideBarClass">
 						<div>
 						<ul id="linkList">
-						
 					  <ul>
 					 <Tilt ref={this.wrapper}>
  					<button id="arrowButton" ref={this.wrapper} onClick={upScroll}><b>Title{this.props.children}</b></button>
@@ -86,7 +54,6 @@ render() {
  					<button id="contactButton" ref={this.wrapper} onClick={contactScroll} ><b>Contact{this.props.children}</b></button>
 					</Tilt>
 					  </ul>
-				
 					  </ul>
 					  <ul id="linkL">
 						  <ul>
@@ -105,7 +72,6 @@ render() {
 							  </a>
 							  </ul>  
 						  </ul>
-					  
 					  </div>
     	    </div>
     );

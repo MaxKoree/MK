@@ -1,8 +1,5 @@
 @import "variables.scss";
 
-
-
-
 ul {
 	margin: 0px;
 	padding: 0px;
@@ -40,22 +37,6 @@ ul {
 	z-index: 0;
 }
 
-#upworkIMG {
-	width: 200px;
-	height: 50px;
-	border: solid 2px black;
-	padding: 1rem;
-	border-radius: 6px;
-}
-
-#linkedinIMG {
-	width: 200px;
-	height: 50px;
-	border: solid 2px black;
-	padding: 1rem;
-	border-radius: 6px;
-}
-
 #linkedinIcon, #upworkIcon{
 	width: 30px;
 	height: 30px;
@@ -72,16 +53,7 @@ ul {
 	border-radius: 50%;
 }
 
-#githubIMG {
-	width: 200px;
-	height: 70px;
-	border: solid 2px black;
-	padding: 1rem;
-	border-radius: 6px;
-}
-
-#linkedinIMG:hover, #upworkIMG:hover, #githubIMG:hover, #arrowButton:hover, #aboutmeButton:hover, #contactButton:hover, 
-#linkedinIcon:hover, #upworkIcon:hover, #aboutmeButton2:hover, #contactButton2:hover, #arrowButton2:hover {
+#linkedinIcon:hover, #upworkIcon:hover {
 	border: solid 2px $borderButton;
     transition: 0.9s;
     border-radius: 6px;
@@ -136,8 +108,6 @@ button:focus {
     outline-style : none;
 }
 
-
-
 @media only screen and (max-width: $small-width) {
 
 	#linkList {
@@ -162,7 +132,6 @@ button:focus {
 		
 	}
 
-
 	#aboutmeButton, #contactButton, #arrowButton {
 		width: 69px;
 		height: 69px;
@@ -178,7 +147,6 @@ button:focus {
 		z-index: 9;
 	 }
 
-
 	 #linkL {
 		width: 7rem;
 		display: inline-grid;
@@ -191,10 +159,7 @@ button:focus {
 		grid-row-gap: 19px;
 		margin-bottom: 9px;
 	}
-
 }
-
-
 
 @media only screen and (max-height: $smaller-height) {
 	#linkList {grid-template-rows: 50px 50px; grid-row-gap: 50px;}

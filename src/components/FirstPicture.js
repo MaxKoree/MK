@@ -6,34 +6,9 @@ class PictureClass extends React.Component {
 	  constructor(props) {
 		    super(props);
 		    this.state = {
-		      width: '',
-		      tooSmall: false
 		    }
-		    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
 		  }
-	  
-	  		componentDidMount() {
-			  this.updateWindowDimensions();
-			  window.addEventListener('resize', this.updateWindowDimensions);
-			 }
-			 
-			componentWillUnmount() {
-				window.removeEventListener('resize', this.updateWindowDimensions);
-			}
-
-			updateWindowDimensions() {
-				this.setState({ width: window.innerWidth });
-				
-			}
-			
-			checkWidth() { 
-				 if(this.state.width < 1420) {
-					return true;
-				 }	else return false;
-			}
-
 render() {
-	
   return (
     <div >
     	    			<div className="firstPictureClass">

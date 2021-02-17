@@ -6,7 +6,6 @@
     width: 81%;
 	text-align: center;
 	float: right;
-	
 }
 
 .contactMeClass {
@@ -17,9 +16,9 @@
 	width: 100%;
 	text-align: center;	
 	font-family: 'JetBrains Mono', monospace;
-
 }
-.bigContact {
+
+.contact {
 	width: 100%;
 	display: inline-grid;
 }
@@ -32,17 +31,6 @@
 	text-align: center;
 	float: right;
 }
-
-
-.smallContact {
-	text-align: center;
-	width: 100%;
-	display: inline-grid;
-	justify-items: center;
-  	align-items: center;
-}
-
-
 
 #form {
 	text-align: center;
@@ -87,8 +75,7 @@ article {
 	background: none;
 	border: solid white 2px;
 	float: left;
-	margin-left: 90px;
-	margin: 20px 0px 0px 90px;
+	margin: 20px 0px 0px 30px;
 	border-radius: 9px;
 }
 
@@ -110,6 +97,7 @@ article {
 	width: 500px;
 	max-width: 400px;
 	max-height: 130px;
+	margin-top: 9px;
 }
 
 #smallForm {
@@ -118,71 +106,10 @@ article {
 	text-align: center;
 }
 
-#nameInput2 {
-	height: 30px;
-	font-size: 20px;
-	border: none;
-	background: none;
-	border: solid  rgb(3, 39, 117) 2px;
-	border-radius: 9px;
-}
-
- #emailInput2 {
- 	height: 30px;
-	font-size: 20px;
-	border: none;
-	background: none;
-	border: solid  rgb(3, 39, 117) 2px;
-	border-radius: 9px;
- }
-
  #formHeader {
 	 text-align: center;
 	 font-size: 30px;
  }
-
-#nameLabel2 {
-	font-size: 20px;
-}
-
-#emailLabel2 {
-	font-size: 20px;
-}
-
-#questionInput2 {
-	font-size: 15px;
-	border: none; 
-	background: none;
-	border: double 2px rgb(3, 39, 117);
-	border-radius: 5px;
-	height: 6rem;
-	width: 15rem;
-	max-width: 230px;
-	max-height: 130px;
-}
-
-#questionLabel2 {
- 	font-size: 20px;
-}
-
-#submitButton2 {
-	font-size: 20px;
-	cursor: pointer;
-	background: none;
-	border: none;
-	height: 40px;
-	width: 230px;
-	border: solid 2px rgb(3, 39, 117);
-	border-radius: 6px;
-}
-
-#submitButton2:hover {
-	border: solid 2px rgb(3, 39, 117);
-    transition: 0.9s;
-    border-radius: 6px;
-    box-shadow: 4px 6px rgb(3, 39, 117);
-}
-
 
 .contactBackground {
 	height: 60rem;
@@ -231,15 +158,78 @@ article {
 	margin-top: -16rem;
 }
 
-
 h6 {
 	font-size: 49px;
 }
 
 @media only screen and (max-width: $small-width) {
 	.contactMeClass {
-		
 		width: 90%;
-		
+	}
+}
+
+@media only screen and (max-width: $tooSmall-width) {
+	#form {
+		width: 19rem;
+		text-align: center;
+		margin-left: 1rem;
+	}
+	
+	#nameInput {
+		height: 30px;
+		font-size: 20px;
+		border: none;
+		background: none;
+		border: solid  white 2px;
+		border-radius: 9px;
+	}
+	
+	 #emailInput {
+		height: 30px;
+		font-size: 20px;
+		border: none;
+		background: none;
+		border: solid  white 2px;
+		border-radius: 9px;
+	 }
+	
+	 #formHeader {
+		 text-align: center;
+		 font-size: 30px;
+	 }
+	
+	#nameLabel {
+		font-size: 20px;
+	}
+	
+	#emailLabel {
+		font-size: 20px;
+	}
+	
+	#questionInput {
+		font-size: 15px;
+		border: none; 
+		background: none;
+		border: double 2px white;
+		border-radius: 5px;
+		height: 6rem;
+		width: 15rem;
+		max-width: 230px;
+		max-height: 130px;
+	}
+	
+	#questionLabel {
+		 font-size: 20px;
+	}
+	
+	#submitButton {
+		font-size: 20px;
+		cursor: pointer;
+		background: none;
+		border: none;
+		height: 40px;
+		width: 230px;
+		border: solid 2px white;
+		border-radius: 6px;
 	}
 }

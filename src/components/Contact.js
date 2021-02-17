@@ -25,38 +25,13 @@ class Contact extends React.Component {
 	  constructor(props) {
 	    super(props);
 	    this.state = {
-		  height: '',
-		  width: '',
-		  tooSmall: false
 	    }
-	    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
 	  }
-  
-	  componentDidMount() {
-		  this.updateWindowDimensions();
-		  window.addEventListener('resize', this.updateWindowDimensions);
-		 }
-		 
-		componentWillUnmount() {
-			window.removeEventListener('resize', this.updateWindowDimensions);
-		}
-
-		updateWindowDimensions() {
-			this.setState({ width: window.innerWidth, height: window.innerHeight });
-			
-		}
-		
-		checkIfEmpty = (string) => {
-			if (string.length > 0) {
-				return false;
-			} else return true;
-		}
 
 	  render() {
-			
 		    return (
 		    <div className="contactClass">
-    			    		  <div className="bigContact">	
+    			    		  <div className="contact">	
     						    <div className="contactMeClass">
     						    <div className="contactBackground" id="contactBackground" />
     						    	<article>
