@@ -3,7 +3,7 @@ import './css/ThemeCheckBox.scss';
 import './css/variables.scss';
 
 const handleCheck = (checked, e) => {
-  var checkBox = document.getElementById("checkbox");
+  let checkBox = document.getElementById("checkbox");
   let body = document.getElementById("body");
   let linkList = document.getElementById("linkList");
   let firstTitle = document.getElementById("firstTitle");
@@ -62,6 +62,7 @@ function ThemeCheckBox() {
 
   return (
     <div className="checkboxClass">
+      <div id="moon"></div>
     <input type="checkbox" id="checkbox" className="darkMode" name="checkbox" value="Dark mode" onChange={handleCheck}></input>
     </div>
   );

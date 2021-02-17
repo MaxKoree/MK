@@ -7,21 +7,13 @@
 }
 
 .darkMode:before {
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
     border: none;
     content: "";
-    
-  cursor: pointer;
-     
-        border-radius: 50%;
-        box-shadow: 12px 15px 0 0 #999;
-      
+    cursor: pointer;
     position: absolute;
-   
- 
     z-index: 100;
- 
 }
 
 input[type=checkbox] {
@@ -30,12 +22,18 @@ input[type=checkbox] {
     height: 40px;
     border: solid 1px #999;
     border-radius: 6px;
+    opacity: 0.0;
 }
 
 input:checked {
-   
     all: unset;
     z-index: 100;
- 
- 
+}
+
+#moon {
+    box-shadow: 12px 15px 0 0 #999;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
 }

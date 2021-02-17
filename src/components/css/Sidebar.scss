@@ -114,7 +114,6 @@ ul {
    padding: 1rem;
    font-size: 35px;
    font-family: 'JetBrains Mono', monospace;
-   width: 200px;
    color: rgb(0, 0, 0);
    background: none;
    cursor: pointer;
@@ -168,7 +167,7 @@ button:focus {
 		width: 69px;
 		height: 69px;
 		padding: 1rem;
-		font-size: 12px;
+		font-size: 10px;
 		font-family: 'JetBrains Mono', monospace;
 		background: none;
 		cursor: pointer;
@@ -176,7 +175,9 @@ button:focus {
 		border: solid 2px black;
 		border-radius: 6px;
 		grid-row-gap: 29px;
+		z-index: 9;
 	 }
+
 
 	 #linkL {
 		width: 7rem;
@@ -196,7 +197,7 @@ button:focus {
 
 
 @media only screen and (max-height: $smaller-height) {
-	#linkList {grid-template-rows: 50px 50px; grid-row-gap: 90px;}
+	#linkList {grid-template-rows: 50px 50px; grid-row-gap: 50px;}
 }
 
 @media only screen and (max-height: $tooSmall) {

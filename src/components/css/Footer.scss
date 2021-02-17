@@ -2,7 +2,7 @@
 
 .footerClass {
 	background: linear-gradient(to right,  white  1%,rgb(200, 242, 255) 70%, #9cffdc 100%);
-	border-bottom: double 10px black;
+	border-bottom: solid 10px black;
 	border-top: solid 10px rgb(0, 0, 0);
 	height: 30rem;
     width: 81%;
@@ -52,7 +52,7 @@ span {
 
 span:hover {
 	transition: 0.5s;
-	color: rgb(86, 168, 104);
+	color: $turq;
 	cursor: -webkit-grab; cursor: grab;
 }
 

@@ -68,12 +68,14 @@ p {
 	opacity: 0.6;
 }
 
-#firstPicture2 {
-	border-radius: 9px;
-	height: 300px;
-	width: 211px;
-	float: left;
-	margin-left: 29rem;
-	margin-top: 6rem;
-	position: absolute;
+@media only screen and (max-width: $small-width) {
+	#firstPicture {
+		border-radius: 9px;
+		height: 300px;
+		width: 211px;
+		float: left;
+		margin-left: 29rem;
+		margin-top: 6rem;
+		position: absolute;
+	}
 }
