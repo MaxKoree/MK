@@ -44,6 +44,8 @@ const handleCheck = (checked, e) => {
     document.getElementById("questionLabel").style.color = "#999";
     document.getElementById("emailLabel").style.color = "#999";
     document.getElementById("nameLabel").style.color = "#999";
+    document.getElementById("pop-upFull").style.background = "linear-gradient(to right,  #999  30%, #999 30%, #333635 100%)";
+    document.getElementById("pop-upHalf").style.background = "linear-gradient(to right,  #999  30%, #999 30%, #333635 100%)";
   } else {
     body.style.backgroundColor = "#eaf0f6";
     linkList.style.backgroundColor = "white";
@@ -70,6 +72,8 @@ const handleCheck = (checked, e) => {
     document.getElementById("questionLabel").style.color = "black";
     document.getElementById("emailLabel").style.color = "black";
     document.getElementById("nameLabel").style.color = "black";
+    document.getElementById("pop-upHalf").style.background = "linear-gradient(to right,  white  1%,rgb(200, 242, 255) 70%, #c6ffeb 100%)";
+    document.getElementById("pop-upFull").style.background = "linear-gradient(to right,  white  1%,rgb(200, 242, 255) 70%, #c6ffeb 100%)";
   }
  
 }

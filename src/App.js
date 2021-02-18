@@ -136,8 +136,7 @@ export default App;
 /**
  *
  * maak templates en laat zien link naar websites die ik heb gebouwd
- * verander fotos naar icons
- * sidenav alle 4 sections gelijk maken dan hoef je ook niet die 3 buttons weg te halen :)
- * leg uit was precies ik kan providen als je klikt op een span opent het een div die zegt wat ik precies doe.
+ * 
+ * sidebar stylen met css.shapes site
  *
  */
