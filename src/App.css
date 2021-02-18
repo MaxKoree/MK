@@ -6,3 +6,12 @@
 	top: 0;
 	z-index: -3;
 }
+
+#bigTitle {
+	text-align: center;
+	width: 80%;
+	font-size: 60px;
+	transform: skew(10deg);
+	float: right;
+	font-family: 'JetBrains Mono', monospace;
+}

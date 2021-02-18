@@ -1,11 +1,11 @@
 @import "variables.scss";
 
 .hireMeClass {
-    height: 60rem;
-    width: 71%;
-	z-index: -2;
+    height: 43rem;
+    width: 63%;
+	z-index: -1;
 	position: relative;
-	float: right;
+	float: left;
 }
 
 #hireMeButton {
@@ -16,7 +16,7 @@
 	font-family: 'JetBrains Mono', monospace;
 	z-index: 2;
 	position: relative;
-	margin-left: 5rem;
+	margin-left: 50%;
 }
 
 h1 {
@@ -24,33 +24,32 @@ h1 {
 	margin: 0px;
 }
 
-h2 {
+#firstTitle {
 	margin: 0;
 	float: left;
 	font-family: 'JetBrains Mono', monospace;
-	font-size: 60px;
-	margin-left: 5rem;
-}
-
-#bigTitle {
-	text-align: center;
-	margin-top: 11rem;
-	margin-bottom: 3rem;
-	width: 90%;
-	font-size: 60px;
-	transform: skew(10deg);
+	font-size: 40px;
+	margin-left: 50%;
 }
 
 @media only screen and (max-width: $smaller-width) {
 	#hireMeButton {
 		width: 30rem;
 		height: 20rem;
-		font-size: 100px;
+		font-size: 60px;
 		cursor: pointer;
 		font-family: 'JetBrains Mono', monospace;
 		z-index: 2;
 		position: relative;
-		margin-left: 5rem;
-		margin-top: 5rem;
+		margin-top: 9rem;
+		margin-left: 9rem;
+	}
+
+	#firstTitle {
+		margin: 0;
+		float: left;
+		font-family: 'JetBrains Mono', monospace;
+		font-size: 30px;
+		margin-left: 9rem;
 	}
 }

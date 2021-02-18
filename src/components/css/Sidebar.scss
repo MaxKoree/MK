@@ -24,7 +24,8 @@ ul {
 #linkList {
 	display: inline-grid;
 	justify-items: center;
-	grid-row-gap: 30px;
+	align-items: center;
+
 	position: fixed;
 	background-color: white;
 	border-right: solid 10px rgb(0, 0, 0);
@@ -33,7 +34,6 @@ ul {
 	height: 100%;
 	text-align: center;
 	width: 19%;
-	padding-top: 2rem;
 	z-index: 0;
 }
 
@@ -112,7 +112,7 @@ button:focus {
 
 	#linkList {
 		display: inline-grid;
-		grid-template-rows: 100px 90px;
+		grid-template-rows: 100px 60px 100px;
 		position: fixed;
 		background: $backgroundRed;
 		border-right: double 10px black;
@@ -124,6 +124,7 @@ button:focus {
 		z-index: 0;
 		grid-template-columns: auto;
 		justify-items: center;
+		align-items: center;
 		transition: 0.9s;
 	}
 	
@@ -162,7 +163,7 @@ button:focus {
 }
 
 @media only screen and (max-height: $smaller-height) {
-	#linkList {grid-template-rows: 50px 50px; grid-row-gap: 50px;}
+	#linkList {grid-template-rows: 50px 50px 50px; grid-row-gap: 50px; padding-top: 3rem;}
 }
 
 @media only screen and (max-height: $tooSmall) {

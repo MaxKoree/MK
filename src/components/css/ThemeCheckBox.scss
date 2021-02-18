@@ -1,9 +1,9 @@
 .checkboxClass {
     height: 60px;
-    width: 60px;
+    width: 50px;
     float: right;
     z-index: 100;
-    margin-right: 3rem;
+    margin-right: 9rem;
 }
 
 .darkMode:before {
@@ -31,9 +31,18 @@ input:checked {
 }
 
 #moon {
-    box-shadow: 12px 15px 0 0 #999;
+    box-shadow: 30px 15px 0 0 #999;
     width: 90px;
     height: 90px;
     border-radius: 50%;
     position: absolute;
+}
+
+#moon:hover {
+    box-shadow: 12px 15px 15px 0 #999;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    transition: 0.5;
 }

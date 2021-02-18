@@ -14,7 +14,7 @@ const aboutMeScroll = () => {
 
 const contactScroll = () => {
 	window.scroll({
-		  top: 2543,
+		  top: 2443,
 		  behavior: 'smooth'
 		});
 }
@@ -37,7 +37,7 @@ class Sidebar extends React.Component {
 render() {
     return (
     		<div className="sideBarClass">
-						<div>
+						
 						<ul id="linkList">
 					  <ul>
 					 <Tilt ref={this.wrapper}>
@@ -72,7 +72,6 @@ render() {
 							  </a>
 							  </ul>  
 						  </ul>
-					  </div>
     	    </div>
     );
 }

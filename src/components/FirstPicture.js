@@ -12,9 +12,11 @@ render() {
   return (
     <div >
     	    			<div className="firstPictureClass">
-    	     	    	<h1 className="aboutmeHeader" id="aboutmeHeader">About me</h1>
-    	     	    	<img src={FirstPicture} alt="Me :)" id="firstPicture"></img>
+						
+						<div className="aboutMeGrid">
     	     	    	<div className="textBackground" id="textBackground"></div>
+						 <div className="text">
+						 <h1 className="aboutmeHeader" id="aboutmeHeader">About me</h1>
     	     		    	<p id="p">Hey, i&#39;m Max Koree, 18 years old, live in Amsterdam. I&#39;m a full stack developer.
     	     		    	I started studying computer science when I was 15 years old.
     	     		    	I&#39;ve learned a lot since, I had an intership at ABN AMRO Bank N.V., IT department (Head office).
@@ -32,6 +34,9 @@ render() {
     	     		    	- Node.js<br></br>
     	     		    	- Java<br></br><br></br>
     	     		    	Feel free to contact me.</p> 
+							 </div>
+							 <img src={FirstPicture} alt="Me :)" id="firstPicture"></img>
+							 </div>
     	    	    	</div>
     	        </div>
 );

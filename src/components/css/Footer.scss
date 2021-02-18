@@ -14,10 +14,11 @@
 	text-align: center;
 	margin-top: 6rem;
 	margin-bottom: 3rem;
-	margin-left: none;
 	width: 90%;
-	font-size: 60px;
+	font-size: 40px;
 	transform: skew(10deg);
+	font-family: 'JetBrains Mono', monospace;
+	float: right;
 }
 
 .footerGrid {
@@ -33,7 +34,7 @@
 	transition: 0.9s;
 	width: 100%;
 	position: relative;
-	float: right;
+
 }
 
 span {
