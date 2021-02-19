@@ -18,6 +18,8 @@ const handleCheck = (checked, e) => {
   let footerTitle = document.getElementById("footerTitle");
   let footerID = document.getElementById("footerID");
   let contactBackground = document.getElementById("contactBackground");
+
+  
   if (checkBox.checked === true){
     body.style.backgroundColor = "#333635";
     linkList.style.backgroundColor = "#333635";
@@ -54,6 +56,8 @@ const handleCheck = (checked, e) => {
     document.getElementById("form").style.borderColor = "#999";
     document.getElementById("footerID").style.borderColor = "#999";
     document.getElementById("linkList").style.borderColor = "#999";
+    document.getElementById("zeroToMasteryLink").style.color = "#999";
+    footerID.style.opacity = "0.9";
   } else {
     body.style.backgroundColor = "#eaf0f6";
     linkList.style.backgroundColor = "white";
@@ -90,6 +94,8 @@ const handleCheck = (checked, e) => {
     document.getElementById("form").style.borderColor = "black";
     document.getElementById("footerID").style.borderColor = "black";
     document.getElementById("linkList").style.borderColor = "black";
+    document.getElementById("zeroToMasteryLink").style.color = "black";
+    footerID.style.opacity = "1";
   }
  
 }
