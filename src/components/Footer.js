@@ -21,7 +21,7 @@ const popUpClose2 = () => {
 
 const contactScroll = () => {
 	window.scroll({
-		  top: 2443,
+		  top: 2436,
 		  behavior: 'smooth'
 		});
 }
@@ -38,21 +38,21 @@ function Footer() {
 
 							- HTML5<br></br>
 							- SASS<br></br>
-							- JavaScript<br></br><br></br>
+							- JavaScript<br></br>
 							- React<br></br>
 							- Node.js<br></br><br></br>
 						
 
-							Feel free to contact me down below</p> <button id="downButton" onClick={contactScroll}><img src={arrowIcon} alt="&#8595;" id="downIcon"></img></button><button id="xButton" onClick={popUpClose}>&#215;</button>
+							Feel free to contact me using the contact form below</p> <button id="downButton" onClick={contactScroll}><img src={arrowIcon} alt="&#8595;" id="downIcon"></img></button><button id="xButton" onClick={popUpClose}>&#215;</button>
 		</div>
 		<div className="pop-upHalf" id="pop-upHalf">
 		<h6 className="pop-upHeader" id="pop-upHeader">Need work done on your website?</h6>
     	     		    	<p id="pop-upText">
 							 I will make the nessesary changes.<br></br><br></br>
 
-							<br></br><br></br><br></br>
+							<br></br>
 
-							Feel free to contact me down below</p> <button id="downButton" onClick={contactScroll}><img src={arrowIcon} alt="&#8595;" id="downIcon"></img></button><button id="xButton" onClick={popUpClose2}>&#215;</button>
+							Feel free to contact me using the contact form below</p> <button id="downButton" onClick={contactScroll}><img src={arrowIcon} alt="&#8595;" id="downIcon"></img></button><button id="xButton" onClick={popUpClose2}>&#215;</button>
 		</div>
 	<h2 id="footerTitle">Ways I can help you</h2><br></br> <br></br>
 		<div className="footerGrid">

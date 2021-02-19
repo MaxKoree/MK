@@ -21,8 +21,7 @@ render() {
     	     		    	I started studying computer science when I was 15 years old.
     	     		    	I&#39;ve learned a lot since, I had an intership at ABN AMRO Bank N.V., IT department (Head office).
     	     		    	Here I started really getting into programming.
-    	     		    	After the internship I followed the&nbsp;
-							 <a href="https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/" target="_blank" rel="noreferrer"> ZeroToMastery</a>&nbsp;
+    	     		    	After the internship I followed the&nbsp;<a href="https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/" target="_blank" rel="noreferrer">ZeroToMastery</a>&nbsp;
 							 online class. <br></br><br></br> I&#39;ve been writing code in the following languages.<br></br><br></br>
     	     		    	- HTML5<br></br>
     	     		    	- CSS<br></br>
