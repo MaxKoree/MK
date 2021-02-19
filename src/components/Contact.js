@@ -36,7 +36,7 @@ class Contact extends React.Component {
     						    <div className="contactBackground" id="contactBackground" />
     						    	<article>
     						    	<form id='form' className="contact-form" onSubmit={sendEmail}>
-    							    	<h3>Contact Me</h3>
+    							    	<h3 id="contactFormHeader">Contact Me</h3>
     							    	<input type="hidden" name="contact_number" />
     							    	<label htmlFor="nameInput" id="nameLabel">Name:</label><br></br><br></br>
     							    	<input id="nameInput" type="text"  name="user_name" required></input> <br></br><br></br><br></br><br></br>

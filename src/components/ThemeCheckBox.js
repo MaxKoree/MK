@@ -46,6 +46,14 @@ const handleCheck = (checked, e) => {
     document.getElementById("nameLabel").style.color = "#999";
     document.getElementById("pop-upFull").style.background = "linear-gradient(to right,  #999  30%, #999 30%, #333635 100%)";
     document.getElementById("pop-upHalf").style.background = "linear-gradient(to right,  #999  30%, #999 30%, #333635 100%)";
+    document.getElementById("span1").style.color = "#999";
+    document.getElementById("span2").style.color = "#999";
+    document.getElementById("span1").style.borderColor = "#999";
+    document.getElementById("span2").style.borderColor = "#999";
+    document.getElementById("contactFormHeader").style.color = "#999";
+    document.getElementById("form").style.borderColor = "#999";
+    document.getElementById("footerID").style.borderColor = "#999";
+    document.getElementById("linkList").style.borderColor = "#999";
   } else {
     body.style.backgroundColor = "#eaf0f6";
     linkList.style.backgroundColor = "white";
@@ -74,6 +82,14 @@ const handleCheck = (checked, e) => {
     document.getElementById("nameLabel").style.color = "black";
     document.getElementById("pop-upHalf").style.background = "linear-gradient(to right,  white  1%,rgb(200, 242, 255) 70%, #c6ffeb 100%)";
     document.getElementById("pop-upFull").style.background = "linear-gradient(to right,  white  1%,rgb(200, 242, 255) 70%, #c6ffeb 100%)";
+    document.getElementById("span1").style.color = "black";
+    document.getElementById("span2").style.color = "black";
+    document.getElementById("span1").style.borderColor = "black";
+    document.getElementById("span2").style.borderColor = "black";
+    document.getElementById("contactFormHeader").style.color = "black";
+    document.getElementById("form").style.borderColor = "black";
+    document.getElementById("footerID").style.borderColor = "black";
+    document.getElementById("linkList").style.borderColor = "black";
   }
  
 }

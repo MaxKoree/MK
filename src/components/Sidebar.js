@@ -36,7 +36,7 @@ class Sidebar extends React.Component {
 
 render() {
     return (
-    		<div className="sideBarClass">
+    		<div className="sideBarClass" id="sideBarID">
 						
 						<ul id="linkList">
 					  <ul>
