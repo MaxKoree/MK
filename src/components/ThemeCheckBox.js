@@ -36,8 +36,8 @@ const handleCheck = (checked, e) => {
     p.style.color = "#999";
     aboutmeHeader.style.color = "#999";
     footerTitle.style.color = "#999";
-    footerID.style.background = "linear-gradient(to right,  #333635  30%, #333635 40%, #999 100%)";
-    contactBackground.style.background = "linear-gradient(to right,  #333635  30%, #333635 30%, #999 100%)";
+    footerID.style.background = "linear-gradient(to right,  #333635  30%, #333635 40%, black 100%)";
+    contactBackground.style.background = "linear-gradient(to right,  #333635  30%, #333635 30%, black 100%)";
     document.getElementById("questionInput").style.borderColor = "#999";
     document.getElementById("emailInput").style.borderColor = "#999";
     document.getElementById("nameInput").style.borderColor = "#999";
@@ -46,8 +46,8 @@ const handleCheck = (checked, e) => {
     document.getElementById("questionLabel").style.color = "#999";
     document.getElementById("emailLabel").style.color = "#999";
     document.getElementById("nameLabel").style.color = "#999";
-    document.getElementById("pop-upFull").style.background = "linear-gradient(to right,  #999  30%, #999 30%, #333635 100%)";
-    document.getElementById("pop-upHalf").style.background = "linear-gradient(to right,  #999  30%, #999 30%, #333635 100%)";
+    document.getElementById("pop-upFull").style.background = "linear-gradient(to right,  #999  30%, #999 30%, black 100%)";
+    document.getElementById("pop-upHalf").style.background = "linear-gradient(to right,  #999  30%, #999 30%, black 100%)";
     document.getElementById("span1").style.color = "#999";
     document.getElementById("span2").style.color = "#999";
     document.getElementById("span1").style.borderColor = "#999";
@@ -57,7 +57,6 @@ const handleCheck = (checked, e) => {
     document.getElementById("footerID").style.borderColor = "#999";
     document.getElementById("linkList").style.borderColor = "#999";
     document.getElementById("zeroToMasteryLink").style.color = "#999";
-    footerID.style.opacity = "0.9";
   } else {
     body.style.backgroundColor = "#eaf0f6";
     linkList.style.backgroundColor = "white";
@@ -95,7 +94,7 @@ const handleCheck = (checked, e) => {
     document.getElementById("footerID").style.borderColor = "black";
     document.getElementById("linkList").style.borderColor = "black";
     document.getElementById("zeroToMasteryLink").style.color = "black";
-    footerID.style.opacity = "1";
+
   }
  
 }

@@ -2,7 +2,7 @@
 
 .hireMeClass {
     height: 43rem;
-    width: 60%;
+    width: 53%;
 	z-index: -1;
 	position: relative;
 	float: left;
@@ -57,7 +57,7 @@ h1 {
 @media only screen and (max-width: $small-width) {
 	#bigTitle {
 		text-align: center;
-		width: 96%;
+		width: 80%;
 		font-size: 60px;
 		transform: skew(10deg);
 		float: right;

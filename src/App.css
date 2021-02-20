@@ -10,6 +10,7 @@
 #bigTitle {
 	text-align: center;
 	width: 80%;
+	margin-left: 1rem;
 	font-size: 60px;
 	transform: skew(10deg);
 	float: right;

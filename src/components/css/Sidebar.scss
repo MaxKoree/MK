@@ -6,7 +6,7 @@ ul {
 }
 
 #linkL {
-	width: 19%;
+	width: 16%;
 	display: inline-grid;
 	justify-items: center;
   	align-items: center;
@@ -33,7 +33,7 @@ ul {
 	padding: 0px;
 	height: 100%;
 	text-align: center;
-	width: 19%;
+	width: 16%;
 	z-index: 0;
 }
 
@@ -115,7 +115,7 @@ button:focus {
 		grid-template-rows: 100px 60px 100px;
 		position: fixed;
 		background: $backgroundRed;
-		border-right: double 10px black;
+		border-right: solid 10px black;
 		padding: 0px;
 		height: 100%;
 		text-align: center;

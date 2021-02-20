@@ -138,5 +138,8 @@ export default App;
  * maak templates en laat zien link naar websites die ik heb gebouwd
  * 
  * sidebar stylen met css.shapes site
+ * 
+ * make the gradient go to black
+ * maybe move the pic a bit to the let so its in the gradient or make the gradient more width
  *
  */

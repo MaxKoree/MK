@@ -5,7 +5,7 @@
 	border-bottom: solid 10px black;
 	border-top: solid 10px rgb(0, 0, 0);
 	height: 30rem;
-    width: 81%;
+    width: 84%;
     text-align: center;
     float: right;
 }
@@ -161,14 +161,14 @@ span:active {
 
 @media only screen and (max-width: $small-width) {
 	.footerClass {
-		width: 91%;
+		width: 96%;
 	}
 
 	#footerTitle {
 		text-align: center;
 		margin-top: 6rem;
 		margin-bottom: 3rem;
-		width: 96%;
+		width: 80%;
 		font-size: 40px;
 		transform: skew(10deg);
 		font-family: 'JetBrains Mono', monospace;
