@@ -168,7 +168,7 @@ span:active {
 		text-align: center;
 		margin-top: 6rem;
 		margin-bottom: 3rem;
-		width: 80%;
+		width: 90%;
 		font-size: 40px;
 		transform: skew(10deg);
 		font-family: 'JetBrains Mono', monospace;
@@ -181,3 +181,17 @@ span:active {
 
 }
 
+@media only screen and (max-width: $smaller-width) {
+
+	#footerTitle {
+		text-align: center;
+		margin-top: 6rem;
+		margin-bottom: 3rem;
+		width: 83%;
+		font-size: 40px;
+		transform: skew(10deg);
+		font-family: 'JetBrains Mono', monospace;
+		float: right;
+	}
+
+}
